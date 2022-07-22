@@ -13,7 +13,6 @@
 @mixin trans{
   width: 100%;
   height: 100%;
-  border: 1px solid black;
 
   transform-style: preserve-3d;
   overflow: hidden;
@@ -27,12 +26,17 @@
   overflow: hidden;
   @include array();
 
+ 
+
+}
+
+.design, .about, .libarary{
+  overflow: none;
 }
 
 section{
-  width: 33.3%;
+  width: 50%;
   height: inherit;
-  border: 1px solid black;
   transform-style: preserve-3d;
   transform: perspective(80rem);
 
@@ -41,18 +45,93 @@ section{
 
 .left_section{
   @include trans();
-  transform: rotateY(15deg);
-  transform-origin: 500px;
+  background-color: #C5A18D;
+
+
 }
 
 .right_section{
   @include trans();
-  transform: rotateY(-15deg);
-  transform-origin: 120px;
+  background-color: #EDD189;
+
+
+
 }
 
 .about{
   width: 40%;
   position: relative;
   z-index: 2;
+  background-color: #fff;
+  display: none;
 }
+
+.enter{
+  width: 10vw;
+  height: 10vh;
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 2vw;
+  position: absolute;
+  top: 50%; left: 45%;
+  z-index: 2;
+
+  display: block;
+}
+
+
+
+.door {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.door-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.door:hover .door-inner {
+  transform: rotateY(180deg);
+}
+
+.door-front, .door-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.door-front>img{
+  position: relative;
+  bottom: -60px;
+  left: 8vw;
+}
+
+
+.door-back {
+  width: 30vw;
+  height: 100vh;
+  
+  position: relative;
+  right: 200px;
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+
+
+@media (max-width: 500px){
+  .right_section,.left_section{
+    border: none;
+    transform: none;
+  }
+}
+
