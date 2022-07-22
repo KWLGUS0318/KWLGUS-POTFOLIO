@@ -53,16 +53,34 @@ section{
 .right_section{
   @include trans();
   background-color: #EDD189;
+  @include array();
 
+&:hover{
+  &>img{
+    display: block;
+  }
+}
 
+&>img{
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
 
+&>button{
+  position: relative;
+  z-index: 3;
+}
 }
 
 .about{
   width: 40%;
+  height: 96.5%;
   position: relative;
   z-index: 2;
-  background-color: #fff;
+  background-color:#FBECF8;;
   display: none;
 }
 
@@ -76,8 +94,13 @@ section{
   position: absolute;
   top: 50%; left: 45%;
   z-index: 2;
+  cursor: pointer;
 
   display: block;
+  &:active{
+    background: #fff;
+box-shadow: inset 30px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 
@@ -124,7 +147,9 @@ section{
   right: 200px;
   background-color: #fff;
   transform: rotateY(180deg);
+  cursor: pointer;
 }
+
 
 
 

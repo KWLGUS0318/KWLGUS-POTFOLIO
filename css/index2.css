@@ -41,13 +41,31 @@ section {
   transform-style: preserve-3d;
   overflow: hidden;
   background-color: #EDD189;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_section:hover > img {
+  display: block;
+}
+.right_section > img {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.right_section > button {
+  position: relative;
+  z-index: 3;
 }
 
 .about {
   width: 40%;
+  height: 96.5%;
   position: relative;
   z-index: 2;
-  background-color: #fff;
+  background-color: #FBECF8;
   display: none;
 }
 
@@ -62,7 +80,12 @@ section {
   top: 50%;
   left: 45%;
   z-index: 2;
+  cursor: pointer;
   display: block;
+}
+.enter:active {
+  background: #fff;
+  box-shadow: inset 30px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .door {
@@ -104,6 +127,7 @@ section {
   right: 200px;
   background-color: #fff;
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {

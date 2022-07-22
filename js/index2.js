@@ -15,7 +15,7 @@ enter.addEventListener('click', () => {
   if( enter.value === 'Open'){
   leftdoor.style.transform = 'rotateY(10deg)';
   leftdoor.style.transformOrigin = '500px';
-  rightdoor.style.transform='rotateY(-5deg)';
+  rightdoor.style.transform='rotateY(-7.5deg)';
   about.style.display = 'block';
 
   enter.value = 'Close';
