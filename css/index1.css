@@ -52,13 +52,13 @@
 }
 
 .enter {
-  width: 300px;
+  width: 800px;
   height: 80px;
   border-radius: 30px;
   position: absolute;
   z-index: 2;
-  bottom: 200px;
-  left: 70vw;
+  bottom: 80px;
+  left: 4vw;
   color: #fff;
   border: 5px solid #fff;
   background-color: rgba(0, 0, 0, 0);
@@ -67,9 +67,6 @@
   cursor: pointer;
 }
 .enter:hover {
-  width: 300px;
-  transition: 1s;
-  transform: translate(30%, 30%);
   background-color: #fff;
   color: #639F54;
 }
@@ -95,8 +92,6 @@
   .enter:hover {
     width: inherit;
     height: inherit;
-    transform: none;
-    transition: none;
   }
 }
 /* mobile*/
