@@ -17,15 +17,35 @@ section {
   width: 33.3%;
   height: inherit;
   border: 1px solid black;
+  transform-style: preserve-3d;
+  transform: perspective(80rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left_section {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   border: 1px solid black;
-  position: absolute;
   transform-style: preserve-3d;
-  transform: rotateY(-90deg);
-  transform-origin: -10px;
+  overflow: hidden;
+  transform: rotateY(15deg);
+  transform-origin: 500px;
+}
+
+.right_section {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  transform: rotateY(-15deg);
+  transform-origin: 120px;
+}
+
+.about {
+  width: 40%;
+  position: relative;
   z-index: 2;
 }/*# sourceMappingURL=index2.css.map */
