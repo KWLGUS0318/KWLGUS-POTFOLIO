@@ -21,3 +21,7 @@ console.log(section2)
   }
 }
 
+const imgs = document.querySelectorAll('img')
+console.log(imgs)
+
+imgs[2].src = './img/lamp.png'

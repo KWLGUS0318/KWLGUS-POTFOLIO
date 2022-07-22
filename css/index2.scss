@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin array {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  @include array();
+
+}
+
+section{
+  width: 33.3%;
+  height: inherit;
+  border: 1px solid black;
+}
+
+.left_section{
+  width: inherit;
+  height: inherit;
+  border: 1px solid black;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg);
+  transform-origin: -10px;
+  z-index: 2;
+}
+
+
+
+
+
