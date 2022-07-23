@@ -20,6 +20,7 @@ enter.addEventListener('click', () => {
 
   enter.value = 'Close';
   enter.textContent = 'Close';
+  document.body.style.backgroundColor = '#000'
 
 }
 
@@ -32,11 +33,7 @@ else{
   enter.textContent = 'Open';
   enter.value = 'Open';
 
-
   }
 
 });
   
-
-
-

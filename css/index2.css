@@ -42,22 +42,33 @@ section {
   overflow: hidden;
   background-color: #EDD189;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: right;
 }
-.right_section:hover > img {
-  display: block;
-}
-.right_section > img {
-  width: 90%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  display: none;
-}
-.right_section > button {
+.right_section > img:nth-child(1) {
+  width: 15vw;
   position: relative;
-  z-index: 3;
+  right: 10vw;
+  top: -10vw;
+}
+.right_section > img:nth-child(1):hover {
+  width: 20vw;
+}
+.right_section > img:nth-child(2) {
+  width: 15vw;
+  position: relative;
+  right: 10vw;
+  top: -10vw;
+}
+.right_section > img:nth-child(2):hover {
+  width: 20vw;
+}
+.right_section > a > p {
+  position: absolute;
+  font-size: 3rem;
+  right: 0vw;
+  bottom: 0vw;
+  padding: 0 4vw 2vw 1vw;
 }
 
 .about {

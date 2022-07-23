@@ -18,7 +18,14 @@
   overflow: hidden;
 
 }
-
+@mixin frame {
+  width: 15vw;
+  position: relative;
+  right: 10vw; top: -10vw;
+  &:hover{
+    width: 20vw;
+  }
+}
 
 #root {
   width: 100vw;
@@ -53,25 +60,25 @@ section{
 .right_section{
   @include trans();
   background-color: #EDD189;
-  @include array();
+  display: flex;
+  align-items: center;
+  justify-content: right;
 
-&:hover{
-  &>img{
-    display: block;
-  }
+&>img:nth-child(1){
+@include frame();
 }
 
-&>img{
-  width: 90%;
-  height: 100%;
+
+&>img:nth-child(2){
+@include frame();
+
+}
+
+&>a>p{
   position: absolute;
-  z-index: 2;
-  display: none;
-}
-
-&>button{
-  position: relative;
-  z-index: 3;
+  font-size: 3rem;
+  right: 0vw; bottom: 0vw;
+  padding: 0 4vw 2vw 1vw; 
 }
 }
 

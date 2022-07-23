@@ -44,3 +44,6 @@ console.log(enterbtn)
 enterbtn.addEventListener('click',()=>{
   location.href = './html/home.html'
 })
+
+
+
