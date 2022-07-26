@@ -52,7 +52,7 @@ section {
   top: -10vw;
 }
 .right_section > img:nth-child(1):hover {
-  width: 20vw;
+  width: 16vw;
 }
 .right_section > img:nth-child(2) {
   width: 15vw;
@@ -61,7 +61,7 @@ section {
   top: -10vw;
 }
 .right_section > img:nth-child(2):hover {
-  width: 20vw;
+  width: 16vw;
 }
 .right_section > a > p {
   position: absolute;
