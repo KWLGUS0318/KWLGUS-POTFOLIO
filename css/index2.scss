@@ -22,8 +22,8 @@
   width: 15vw;
   position: relative;
   right: 10vw; top: -10vw;
-  &:hover{
-    width: 16vw;
+  &:active{
+    width: 18vw;
   }
 }
 
@@ -96,6 +96,7 @@ section{
   height: 10vh;
   border-radius: 30px;
   background-color: #fff;
+  border: none;
   text-align: center;
   font-size: 2vw;
   position: absolute;

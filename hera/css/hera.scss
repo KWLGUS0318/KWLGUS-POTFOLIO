@@ -48,10 +48,10 @@
 
 .sign {
   position: absolute;
-  width: 70px;
-  height: 10px;
-  right: 3.4vw;
-  bottom: 13px;
+  width: 80px;
+  height: 30px;
+  right: 3.5vw;
+  top: 115px;
   background-color: #000;
 
   border-radius: 5px;
@@ -65,11 +65,11 @@
   &>p {
     transform: rotate(180deg);
     position: absolute;
-    text-align: center;
     right: 15px;
-    top: 6px;
-    font-size: 0.5vw;
+    top: 5px;
+    font-size: 0.6vw;
     color: white;
+    text-align: center;
   }
 }
 
@@ -81,8 +81,8 @@
   border-bottom: 10px solid transparent;
   content: "";
   position: absolute;
-  top: 20px;
-  right: 16px;
+  top: 28px;
+  right: 18px;
 }
 
 /*말풍선 애니메이션*/
@@ -90,11 +90,7 @@
 
 @keyframes signup {
   60% {
-    bottom: 10px;
-  }
-
-  90% {
-    bottom: 15px;
+    top: 120px;
   }
 }
 

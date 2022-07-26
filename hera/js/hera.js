@@ -1,3 +1,5 @@
+
+// 퍼스널 테스트
 const personbtn = document.querySelector('.btn')
 console.dir(personbtn)
 
