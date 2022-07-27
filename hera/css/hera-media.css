@@ -5,4 +5,8 @@
   .bucket {
     right: 20vw;
   }
+  .sign > p {
+    width: inherit;
+    left: -20px;
+  }
 }/*# sourceMappingURL=hera-media.css.map */
