@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  background-color: brown;
-}
-
 #root {
   width: 400vw;
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+section {
+  width: 100vw;
+  height: inherit;
+  border: 1px solid black;
 }/*# sourceMappingURL=index.css.map */

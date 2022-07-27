@@ -13,9 +13,9 @@
 }
 #root > header {
   width: inherit;
-  height: 150px;
+  height: 120px;
   border-bottom: 1px solid #000;
-  position: relative;
+  position: fixed;
   background-color: #fff;
   z-index: 2;
   display: flex;
@@ -94,8 +94,11 @@
   height: 7vh;
   background-color: #000;
   z-index: 2;
-  position: fixed;
-  top: 0px;
+  position: absolute;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu:hover {
   background-color: #fff;
@@ -105,12 +108,12 @@
 
 /* 버튼*/
 .menubtn {
+  width: 33.3%;
   background-color: #000;
   color: #fff;
   font-size: 16px;
   position: -webkit-sticky;
   position: sticky;
-  margin: 20px 0px 0px 20vw;
 }
 
 /* a link*/
@@ -151,29 +154,13 @@
 
 .add {
   width: 100vw;
-  height: 40vh;
+  height: 35vw;
 }
 .add > img {
+  position: absolute;
+  top: 150px;
   width: inherit;
   height: inherit;
-}
-.add > p {
-  width: 40%;
-  font-size: 2.3vw;
-  text-align: left;
-  position: absolute;
-  top: 400px;
-  left: 2vw;
-  z-index: 2;
-}
-.add > h3 {
-  width: 100%;
-  position: absolute;
-  top: 300px;
-  left: 2vw;
-  text-align: left;
-  font-size: 2.5vw;
-  z-index: 2;
 }
 
 .personal-test {
