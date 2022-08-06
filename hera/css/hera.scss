@@ -10,6 +10,8 @@
   justify-content: center;
 }
 
+
+
 #root {
   width: 100vw;
   height: 300vh;
@@ -193,8 +195,8 @@
 
 .add {
   width: 100vw;
-  height: 45vw;
-  margin-top: 130px;
+  height: 100vh;
+  margin-top: 100px;
 
 }
 
@@ -210,12 +212,15 @@
   font-size: 2vw;
 }
 
-.number1, .number2 , .number3, .number4{
+.number1, .number2 , .number3, .number4 {
+  width: inherit;
+  height: inherit;
   position: absolute;
+  &>img{
+    width: inherit;
+    height: inherit;
+  }
 }
-
-
-
 
 
 .on {

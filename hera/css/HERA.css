@@ -174,8 +174,8 @@
 
 .add {
   width: 100vw;
-  height: 45vw;
-  margin-top: 130px;
+  height: 100vh;
+  margin-top: 100px;
 }
 
 .title {
@@ -189,7 +189,13 @@
 }
 
 .number1, .number2, .number3, .number4 {
+  width: inherit;
+  height: inherit;
   position: absolute;
+}
+.number1 > img, .number2 > img, .number3 > img, .number4 > img {
+  width: inherit;
+  height: inherit;
 }
 
 .on {
