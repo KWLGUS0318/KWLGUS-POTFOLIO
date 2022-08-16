@@ -4,17 +4,15 @@
   box-sizing: border-box;
 }
 
-@mixin display {
+@mixin array {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
 #root {
   width: 100vw;
-  height: 300vh;
+  height: 400vh;
   overflow: hidden;
 
   /*로고 창*/
@@ -25,8 +23,7 @@
     background-color: #fff;
     z-index: 2;
 
-    @include display();
-
+    @include array();
   }
 
 }
@@ -101,10 +98,8 @@
   z-index: 1;
   position: relative;
   top: 140px;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+  @include array();
   &:hover {
     background-color: #fff;
     border-bottom: 1px solid #000;
@@ -195,8 +190,8 @@
 
 .add {
   width: 100vw;
-  height: 100vh;
-  margin-top: 100px;
+  height: 45vw;
+  margin-top: 130px;
 
 }
 
@@ -212,15 +207,12 @@
   font-size: 2vw;
 }
 
-.number1, .number2 , .number3, .number4 {
-  width: inherit;
-  height: inherit;
+.number1, .number2 , .number3, .number4{
   position: absolute;
-  &>img{
-    width: inherit;
-    height: inherit;
-  }
 }
+
+
+
 
 
 .on {
