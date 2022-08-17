@@ -20,14 +20,94 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-color: var(--color1);
 }
 
 
-header{
+header {
   width: inherit;
-  height: 150px;
+  height: 63px;
   background-color: #fff;
+  position: fixed;
+
+  @include display();
+
+
+  &>div{
+    width: 40%;
+    height: inherit;
+    @include display();
+  }
+  &>nav{
+    width: 60%;
+    height: inherit;
+  }
+}
+.menu{
+  height: inherit;
+  @include display();
+  &>li{
+    width: 20%;
+    @include display();
+    &>a{
+      text-decoration-line: none;
+    }
+  }
+}
+
+$secton-width: 600px;
+
+.recommand{
+  width: inherit;
+  height: $secton-width;
+  border: 1px solid #000;
   @include display();
 }
+
+.first-recommand{
+  @include display();
+  &>div{
+  width: 20vw;
+  height: 20vw;
+  background-color:#fff;
+  margin-right: 30px;
+  &>a{
+    width: inherit;
+    height: inherit;
+   
+    &>img{
+      width: inherit;
+      height: inherit;
+    }
+  }
+ 
+  }}
+
+  .right{
+    width: 50px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    font-size: 1.5vw;
+
+    &:active{
+      background-color: #ddd;
+    }
+  }
+
+  .time{
+    width: 30%;
+    height: inherit;
+    @include display();
+    font-size: 2vw;
+  }
+
+  .food{
+    width: 70%;
+    height: inherit;
+    background-color: #fff;
+    @include display();
+
+  }

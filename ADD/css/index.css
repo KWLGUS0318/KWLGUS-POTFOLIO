@@ -14,13 +14,101 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-color: var(--color1);
 }
 
 header {
   width: inherit;
-  height: 150px;
+  height: 63px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > div {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > nav {
+  width: 60%;
+  height: inherit;
+}
+
+.menu {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu > li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu > li > a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.recommand {
+  width: inherit;
+  height: 600px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-recommand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-recommand > div {
+  width: 20vw;
+  height: 20vw;
+  background-color: #fff;
+  margin-right: 30px;
+}
+.first-recommand > div > a {
+  width: inherit;
+  height: inherit;
+}
+.first-recommand > div > a > img {
+  width: inherit;
+  height: inherit;
+}
+
+.right {
+  width: 50px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: #fff;
+  font-size: 1.5vw;
+}
+.right:active {
+  background-color: #ddd;
+}
+
+.time {
+  width: 30%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+.food {
+  width: 70%;
+  height: inherit;
   background-color: #fff;
   display: flex;
   align-items: center;
