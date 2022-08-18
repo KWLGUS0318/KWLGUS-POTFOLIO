@@ -13,7 +13,7 @@ rightbtn.addEventListener('click', (e) => {
 
 })
 
-const timer = document.querySelector('.time')
+const timer = document.querySelector('.timer')
 console.log(timer)
 
 let time = 600;
@@ -23,7 +23,7 @@ let sec = '';
 let clock = setInterval(() => {
   min = parseInt(time / 60);
   sec = time % 60;
-  timer.textContent = min + '분' + sec + '초'
+  timer.textContent = min + '분'+ sec + '초'
   time--;
 
   if(time<0){
