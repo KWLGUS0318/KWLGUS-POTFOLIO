@@ -33,3 +33,8 @@ let clock = setInterval(() => {
 
 }, 1000);
 
+
+
+const first = document.querySelector('.choice').children[0]
+console.log(first)
+first.style.backgroundColor = '#fff';
