@@ -71,8 +71,8 @@ header > nav {
   justify-content: center;
 }
 .first-recommand > div {
-  width: 20vw;
-  height: 20vw;
+  width: 15.4vw;
+  height: 15vw;
   background-color: #fff;
   margin-right: 30px;
 }
@@ -115,7 +115,7 @@ header > nav {
 .timer,
 .time-img {
   width: 100%;
-  height: 40%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,15 +205,15 @@ header > nav {
   justify-content: center;
 }
 
-.center {
-  width: 100%;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/**
+.center{
+  width:100%;
+  height: $secton-height;
+
+  @include display();
   border: 1px solid black;
 }
-
+**/
 .center-phone, .counsle {
   width: 50%;
   height: 100%;
