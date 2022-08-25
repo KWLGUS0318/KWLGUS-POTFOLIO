@@ -23,7 +23,6 @@ header {
 header > ul {
   width: inherit;
   height: inherit;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,4 +31,29 @@ header > ul > li {
   width: 33.3%;
   height: inherit;
   border: 1px solid black;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person {
+  width: 100%;
+  height: 130px;
+  border: 1px solid black;
+}
+.person > ul {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person > ul > li {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 60px;
+  border: 1px solid black;
+  list-style: none;
+  margin-right: 15px;
 }/*# sourceMappingURL=index.css.map */

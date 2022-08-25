@@ -24,11 +24,31 @@ header{
 &>ul{
   width: inherit;
 height: inherit;
-border: 1px solid black;
 @include display();
 &>li{
   width: 33.3%;
   height: inherit;
   border: 1px solid black;
-}};
+  list-style: none;
+  @include display();
+}}}
+
+
+.person{
+  width:  100%;
+  height: 130px;
+  border: 1px solid black;
+  &>ul{
+    width: inherit;
+    height: inherit;
+    @include display();
+    &>li{
+      width: 5vw;
+      height: 10vh;
+      border-radius: 60px;
+      border: 1px solid black;
+      list-style: none;
+      margin-right: 15px;
+    }
+  }
 }
