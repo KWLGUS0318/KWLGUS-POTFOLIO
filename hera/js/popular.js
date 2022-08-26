@@ -6,7 +6,7 @@ const choice = document.querySelector('.choice')
 console.log(pop,newThings,choice)
 
 let widthValue = '100%';
-let heightValue = '50vh';
+let heightValue = '80vh';
 let height= 'vh'
 let width= 'vw'
 

@@ -7,5 +7,5 @@ const choice6 = document.querySelector('.choice').children[6]
 const choice7 = document.querySelector('.choice').children[7]
 const choice8 = document.querySelector('.choice').children[8]
 
-choice1.addEventListener('mouseover', ()=>{
-})
+
+

@@ -1,10 +1,10 @@
-const liSection = document.querySelectorAll('header > ul >li')
-console.log(liSection)
+const sections = document.querySelectorAll('section')
+console.log(sections)
 
-let percent = '%'
-let widthValue = 15
-liSection[0].style.width= widthValue + percent
-liSection[1].style.width= 100 + percent
 
-liSection[2].style.width= 10 + percent
-liSection[3].style.width= 10 + percent
+let widthValue = '%'
+let sideValue  = 15
+
+sections[0].style.width =  sideValue + widthValue;
+sections[1].style.width =  70 + widthValue;
+sections[2].style.width =  sideValue + widthValue;
