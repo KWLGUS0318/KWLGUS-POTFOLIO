@@ -10,9 +10,9 @@
 }
 
 header {
+  border: 1px solid #ddd;
   width: inherit;
   height: 90px;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -28,21 +28,13 @@ header > ul {
   justify-content: center;
 }
 header > ul > li:nth-child(1) {
-  width: 20%;
-  height: 100%;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header > ul > li:nth-child(2) {
   width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header > ul > li:nth-child(2) > img {
+header > ul > li:nth-child(1) > img {
   width: inherit;
   height: 60%;
   cursor: pointer;
@@ -69,6 +61,7 @@ header > ul > li:nth-child(2) > img {
   width: 20%;
   height: 40%;
   border-right: 1px solid #d4d4d4;
+  cursor: pointer;
 }
 
 .slide {
@@ -95,4 +88,59 @@ header > ul > li:nth-child(2) > img {
 }
 .slide > ul > li:active {
   box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  position: absolute;
+  width: 85.5%;
+  height: 60vh;
+  background-color: #ddd;
+  top: 90px;
+  left: 15vw;
+}
+main > div {
+  width: inherit;
+  height: 70%;
+}
+main > section {
+  width: 100%;
+  height: 30%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section > div {
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.part {
+  width: 85vw;
+  height: 300vh;
+  position: absolute;
+  top: 666px;
+  left: 15vw;
+}
+.part > div {
+  width: inherit;
+  height: 20%;
+  margin-top: 30px;
+}
+
+.brand {
+  background-color: #fff;
+}
+.brand > div > div {
+  border: 1px dotted #ccc;
+  cursor: pointer;
+}
+.brand > div > div:hover {
+  border: 1px solid #fceac8;
+  box-shadow: 1rem 1rem 1rem #fceac8;
+}
+.brand > div > div:active {
+  background-color: #fff;
+  box-shadow: inset 2rem 2rem 5rem #fceac8;
 }/*# sourceMappingURL=index.css.map */
