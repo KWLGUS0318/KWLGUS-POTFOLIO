@@ -6,35 +6,93 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
 }
 
 header {
   width: inherit;
   height: 90px;
-  border: 1px solid #000;
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
 }
 header > ul {
-  width: 15vw;
+  width: 23vw;
   height: inherit;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > ul > li:nth-child(1) {
+  width: 20%;
+  height: 100%;
   border: 1px solid black;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  list-style: none;
+}
+header > ul > li:nth-child(2) {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > ul > li:nth-child(2) > img {
+  width: inherit;
+  height: 60%;
+  cursor: pointer;
 }
 
-main {
-  width: inherit;
-  height: 90vh;
+.upper-Box {
+  width: 30vw;
+  height: 100%;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
-main > section {
-  width: 33.3%;
-  height: inherit;
-  border: 1px solid black;
+.upper-Box > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upper-Box > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40%;
+  border-right: 1px solid #d4d4d4;
+}
+
+.slide {
+  width: 15.2%;
+  height: 91vh;
+  position: fixed;
+  top: 90px;
+}
+.slide > ul {
+  width: 100%;
+  height: 100%;
+}
+.slide > ul > li {
+  border-bottom: 1px dotted #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  cursor: pointer;
+}
+.slide > ul > li:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.slide > ul > li:active {
+  box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=index.css.map */
