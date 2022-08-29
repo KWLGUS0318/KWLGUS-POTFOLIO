@@ -69,11 +69,10 @@ brandname2[1].textContent = '마녀공장'
 brandname2[2].textContent = '닥터지'
 brandname2[3].textContent = '비플레인'
 
-
 const more = document.querySelector('.more')
 more.style.position = 'absolute'
 more.style.right = '40px'
-more.style.top = '480px'
+more.style.top = '650px'
 
 
 

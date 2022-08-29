@@ -2,9 +2,15 @@
   #root {
     width: 80%;
   }
+  header {
+    width: 100%;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #root {
     width: 100%;
+  }
+  .health > div > div {
+    line-height: 1;
   }
 }/*# sourceMappingURL=media.css.map */

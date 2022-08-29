@@ -125,7 +125,7 @@ main > section > div {
   width: 85vw;
   height: 300vh;
   position: absolute;
-  top: 666px;
+  top: 70vh;
   left: 15vw;
 }
 .part > div {
@@ -158,7 +158,7 @@ main > section > div {
   width: 100%;
   height: 60px;
   text-align: center;
-  line-height: 3;
+  font-size: 2em;
 }
 .routine > div {
   width: inherit;
@@ -184,4 +184,34 @@ main > section > div {
 .care {
   width: 100%;
   height: 50%;
+}
+
+.health > h3 {
+  width: inherit;
+  height: 60px;
+  text-align: center;
+  font-size: 2em;
+}
+.health > div {
+  cursor: pointer;
+  width: inherit;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.health > div > div {
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  line-height: 7;
+  font-size: 1.5rem;
+}
+.health > div > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.j {
+  border: 1px solid black;
 }/*# sourceMappingURL=index.css.map */

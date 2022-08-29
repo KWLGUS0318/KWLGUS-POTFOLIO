@@ -10,6 +10,7 @@ upperbox.addEventListener('click', ()=>{
   login.style.top = '200px';
   login.style.left = '40%';
   login.style.border = '1px solid #000';
+  login.style.position = 'fixed';
  login.style.opacity = '100%';
   login.style.background = '#fff';
 
