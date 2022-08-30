@@ -187,7 +187,7 @@ main > section > div {
 }
 
 .health > h3 {
-  width: inherit;
+  width: 100%;
   height: 60px;
   text-align: center;
   font-size: 2em;
@@ -212,6 +212,87 @@ main > section > div {
   height: 100%;
 }
 
-.j {
+.skin-type > h3 {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 2em;
+}
+.skin-type > div {
+  width: 100%;
+  height: 55.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skin-type > div > div {
+  width: 50%;
+  height: 100%;
   border: 1px solid black;
+}
+
+.type > div {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type > div:nth-child(1) > div {
+  width: 12vw;
+  height: 100%;
+  border-radius: 100px 100px 0px 0px;
+  border: 10px solid #000;
+}
+.type > div:nth-child(1) > div:hover {
+  background-color: #000;
+}
+.type > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.type > div:nth-child(2) > div:nth-child(1) {
+  width: 13vw;
+  transform: matrix(0, 1, 1, 0, 0, 0);
+  height: 100%;
+  border-radius: 100px 100px 0px 0px;
+  border: 10px solid #000;
+}
+.type > div:nth-child(2) > div:nth-child(1):hover {
+  background-color: #000;
+}
+.type > div:nth-child(2) > div:nth-child(1) > p {
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.type > div:nth-child(2) > div:nth-child(2) {
+  width: 13vw;
+  transform: rotate(89.81deg);
+  height: 100%;
+  border-radius: 100px 100px 0px 0px;
+  border: 10px solid #000;
+}
+.type > div:nth-child(2) > div:nth-child(2):hover {
+  background-color: #000;
+}
+.type > div:nth-child(2) > div:nth-child(2) > p {
+  transform: rotate(89.81deg);
+}
+.type > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type > div:nth-child(3) > div {
+  width: 13vw;
+  height: 100%;
+  border-radius: 100px 100px 0px 0px;
+  border: 10px solid #000;
+  transform: rotate(-180deg);
+}
+.type > div:nth-child(3) > div:hover {
+  background-color: #000;
+}
+.type > div:nth-child(3) > div > p {
+  transform: rotate(-180deg);
 }/*# sourceMappingURL=index.css.map */
