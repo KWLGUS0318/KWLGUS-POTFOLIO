@@ -390,6 +390,7 @@ main {
   width: 100%;
   height: 80%;
   @include display();
+
   &>h4{
     width: 20%;
   }

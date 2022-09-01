@@ -2,7 +2,7 @@
 }
 
 #root{
-  width: 400vw;
+  width: 500vw;
   height: 100vh;
 
 
@@ -11,8 +11,8 @@
   justify-content: center;
 }
 
-section{
-width: 100vw;
-height: inherit;
-border: 1px solid black;
+.container{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #666;
 }

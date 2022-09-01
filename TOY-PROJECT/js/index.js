@@ -19,8 +19,8 @@ window.addEventListener("wheel", (event) => {
   if (eventHandle < 0) {
     eventHandle = 0;
   }
-  if (eventHandle > 5) {
-    eventHandle = 5;
+  if (eventHandle > 10) {
+    eventHandle = 10;
   }
 });
 

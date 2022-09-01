@@ -5,15 +5,15 @@
 }
 
 #root {
-  width: 400vw;
+  width: 500vw;
   height: 100vh;
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-section {
+.container {
   width: 100vw;
-  height: inherit;
-  border: 1px solid black;
+  height: 100vh;
+  border: 1px solid #666;
 }/*# sourceMappingURL=index.css.map */
