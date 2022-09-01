@@ -72,7 +72,7 @@ brandname2[3].textContent = '비플레인'
 const more = document.querySelector('.more')
 more.style.position = 'absolute'
 more.style.right = '40px'
-more.style.top = '650px'
+more.style.top = '400px'
 
 
 
@@ -81,3 +81,10 @@ brandlist.style.height= '17%'
 
 const routine = document.querySelector('.routine')
 routine.style.height = '30%'
+
+
+const notice = document.querySelector('.notice-area')
+console.log(notice)
+
+notice.style.height = "10%";
+notice.style.marginTop = '100px'
