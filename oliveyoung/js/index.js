@@ -72,7 +72,7 @@ brandname2[3].textContent = '비플레인'
 const more = document.querySelector('.more')
 more.style.position = 'absolute'
 more.style.right = '40px'
-more.style.top = '400px'
+more.style.top = '490px'
 
 
 

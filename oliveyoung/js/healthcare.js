@@ -10,9 +10,7 @@ health[4].style.color = '#fff';
 
 
 
-health[5].style.backgroundColor = '#FBD46B';
+health[5].style.backgroundColor = '#FBD46B'
 health[5].style.color = '#fff';
-
-
 
 

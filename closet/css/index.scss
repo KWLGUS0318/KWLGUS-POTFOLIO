@@ -1,7 +1,10 @@
-*{margin: 0; padding: 0; box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#root{
+#root {
   width: 500vw;
   height: 100vh;
 
@@ -11,8 +14,8 @@
   justify-content: center;
 }
 
-.container{
+.container {
   width: 100vw;
-  height: 100vh;
+  height: inherit;
   border: 1px solid #666;
 }
