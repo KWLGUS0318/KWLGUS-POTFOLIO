@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 500vw;
+  height: 100vh;
+
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  height: inherit;
+  border: 1px solid #666;
+}
