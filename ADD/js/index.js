@@ -30,3 +30,5 @@ const first = document.querySelector('.choice').children[0]
 first.style.backgroundColor = '#fff';
 first.style.color = '#000';
 first.style.cursor = 'auto';
+
+

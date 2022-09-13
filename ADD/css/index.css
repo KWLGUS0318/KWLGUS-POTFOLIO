@@ -71,8 +71,8 @@ header > nav {
   justify-content: center;
 }
 .first-recommand > div {
-  width: 15.4vw;
-  height: 15vw;
+  width: 20vw;
+  height: 19vw;
   background-color: #fff;
   margin-right: 30px;
 }
@@ -176,7 +176,6 @@ header > nav {
   width: 100%;
   height: 12.5%;
   background-color: #4CBFD9;
-  border: 1px solid #fff;
   list-style: none;
   display: flex;
   align-items: center;
@@ -185,8 +184,7 @@ header > nav {
   cursor: pointer;
 }
 .choice > li:hover {
-  background-color: #fff;
-  color: #000;
+  border: 1px solid #fff;
 }
 
 .categorize {

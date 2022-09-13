@@ -8,4 +8,11 @@ const choice7 = document.querySelector('.choice').children[7]
 const choice8 = document.querySelector('.choice').children[8]
 
 
+const choice = document.querySelectorAll('.choice > li')
+console.log(choice)
+
+let white = '#fff'
+let skyblue = '#4CBFD9'
+
+let isState = true;
 
