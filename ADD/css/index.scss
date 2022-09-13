@@ -33,7 +33,7 @@ header {
   position: fixed;
 
   @include display();
-  z-index: 1;
+  z-index: 2;
 
 
   &>div {
@@ -45,6 +45,32 @@ header {
   &>nav {
     width: 60%;
     height: inherit;
+  }
+}
+
+.search{
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  top:60px;
+  z-index: 1;
+}
+
+.input-search{
+  width: 40%;
+  height: 50%;
+  @include display();
+  &>input{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #666;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  &>img{
+    width: 5%;
+    cursor: pointer;
   }
 }
 
@@ -72,7 +98,8 @@ $secton-height: 600px;
 
 .first-recommand {
   @include display();
-
+  position: relative;
+  top: 50px;
   &>div {
     width: 20vw;
     height: 19vw;
@@ -113,20 +140,21 @@ $secton-height: 600px;
 .timer,
 .time-img {
   width: 100%;
-  height: 50%;
+  height: 30%;
   @include display();
-  font-size: 1.8vw;
+  font-size: 2.8vw;
   color: #fff;
-  ;
+  letter-spacing: 35px;
+  position: relative;
+  top: 100px;
+  text-align: center;
 
   &>img {
     position: relative;
-    top: 100px;
     width: 60%;
     animation: clock 3s;
     animation-iteration-count: 3;
   }
-
 
 
   &>h1 {
@@ -142,28 +170,48 @@ $secton-height: 600px;
   width: 70%;
   height: inherit;
   background-color: #fff;
-  @include display();
 
-  &>a {
-    &:nth-child(1) {
-      margin-left: 10px;
-    }
-
-    width: 35vw;
-    height: 30vh;
-    border-radius: 60px;
-    margin-right: 10px;
-
-    &>img {
-      width: 100%;
-      height: inherit;
-      border-radius: 60px;
-
+  &>div {
+    width: 100%;
+    height: 50%;
+    @include display();
+    
+    &>div {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      line-height: 3;
+      border-right: 1px dotted #777;
+      
+      &>div{
+        width: 100%;
+        height: 50%;
+      @include display();
+      &>button{
+        width: 6vw;
+        height: 8vh;
+        border-radius: 30px;
+        margin-right: 10px;
+        background-color: #fff;
+        border: 1px dotted var(--color2);
+        &:hover{
+          background-color: var(--color1);
+        }
+        &:active{
+        background-color: var(--color2);
+        border: none;
+        }
+      }
+      }
+      &>img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    
     }
   }
-
 }
-
 
 @keyframes clock {
   30% {

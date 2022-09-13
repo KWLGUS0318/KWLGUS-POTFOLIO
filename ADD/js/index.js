@@ -14,7 +14,7 @@ let sec = '';
 let clock = setInterval(() => {
   min = parseInt(time / 60);
   sec = time % 60;
-  timer.textContent = min + '분' + sec + '초'
+  timer.textContent = 'AM' + min + ':' + sec
   time--;
 
   if (time < 0) {

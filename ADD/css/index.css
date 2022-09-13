@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 header > div {
   width: 40%;
@@ -38,6 +38,34 @@ header > div {
 header > nav {
   width: 60%;
   height: inherit;
+}
+
+.search {
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+}
+
+.input-search {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-search > input {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #666;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+.input-search > img {
+  width: 5%;
+  cursor: pointer;
 }
 
 .menu {
@@ -69,6 +97,8 @@ header > nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 50px;
 }
 .first-recommand > div {
   width: 20vw;
@@ -103,17 +133,20 @@ header > nav {
 .timer,
 .time-img {
   width: 100%;
-  height: 50%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8vw;
+  font-size: 2.8vw;
   color: #fff;
+  letter-spacing: 35px;
+  position: relative;
+  top: 100px;
+  text-align: center;
 }
 .timer > img,
 .time-img > img {
   position: relative;
-  top: 100px;
   width: 60%;
   -webkit-animation: clock 3s;
           animation: clock 3s;
@@ -132,23 +165,47 @@ header > nav {
   width: 70%;
   height: inherit;
   background-color: #fff;
+}
+.food > div {
+  width: 100%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.food > a {
-  width: 35vw;
-  height: 30vh;
-  border-radius: 60px;
-  margin-right: 10px;
+.food > div > div {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  line-height: 3;
+  border-right: 1px dotted #777;
 }
-.food > a:nth-child(1) {
-  margin-left: 10px;
-}
-.food > a > img {
+.food > div > div > div {
   width: 100%;
-  height: inherit;
-  border-radius: 60px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food > div > div > div > button {
+  width: 6vw;
+  height: 8vh;
+  border-radius: 30px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px dotted var(--color2);
+}
+.food > div > div > div > button:hover {
+  background-color: var(--color1);
+}
+.food > div > div > div > button:active {
+  background-color: var(--color2);
+  border: none;
+}
+.food > div > div > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 @-webkit-keyframes clock {

@@ -6,19 +6,18 @@ const menuContainer = document.querySelector('#root > header > ul');
 
 
 for(let i = 0; i < main.children.length; i++) {
-  main.children[i].style.visibility = "hidden";
+  main.children[i].style.display = "none";
 }
 
 
 menuContainer.addEventListener('click', function (event) {
   let getHashValue = event.target.dataset.hash;
   
-  console.log(getHashValue);
   for(let i = 0; i < main.children.length; i++) {
     if(getHashValue === main.children[i].dataset.hash) {
-      main.children[i].style.visibility = "visible";
+      main.children[i].style.display = "block";
     } else {
-      main.children[i].style.visibility = "hidden";
+      main.children[i].style.display = "none";
     }
   }
 });
