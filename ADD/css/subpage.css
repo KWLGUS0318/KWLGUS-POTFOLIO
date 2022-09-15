@@ -33,6 +33,7 @@ header > div {
   justify-content: center;
 }
 
+/* header second */
 .service {
   width: 60%;
   height: inherit;
@@ -117,4 +118,5 @@ header > div {
   width: 16.6%;
   height: 30%;
   text-align: center;
+  cursor: pointer;
 }/*# sourceMappingURL=subpage.css.map */
