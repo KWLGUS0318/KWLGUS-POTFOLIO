@@ -1,12 +1,14 @@
-@media(max-width:500px){
+@media(max-width:1000px){
   .profile{
-    right: 10vw;
+    right: 0vw;
   }
   .bucket{
-    right: 20vw;
+    right: 6vw;
   }
-  .sign>p{
+  .sign{
+    right: -5vw;
+  &>p{
     width: inherit;
     left: -20px;
-  }
+  }}
 }

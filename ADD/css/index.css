@@ -91,28 +91,19 @@ header > nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 30px;
 }
 
 .first-recommand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   top: 50px;
 }
 .first-recommand > div {
-  width: 20vw;
-  height: 19vw;
+  width: 100vw;
+  height: 500px;
+  border: 1px solid black;
   background-color: #fff;
-  margin-right: 30px;
-}
-.first-recommand > div > a {
-  width: inherit;
-  height: inherit;
-}
-.first-recommand > div > a > img {
-  width: inherit;
-  height: inherit;
 }
 
 .title {
