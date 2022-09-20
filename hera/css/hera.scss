@@ -10,8 +10,10 @@
   justify-content: center;
 }
 
-body {
-  @include array();
+body{
+  border: 1px dotted black;
+  position: absolute;
+  left: 25%;  
 }
 
 #root {
@@ -142,12 +144,12 @@ body {
     color: #000;
     z-index: 1;
     text-align: center;
-    line-height: 4;
+    @include array();
     &:hover {
       background-color: #000;
       color: #fff;
       z-index: 1;
-      text-align: left;
+      justify-content: left;
 
     }
   }
@@ -159,7 +161,6 @@ body {
   height: 100%;
   @include array();
   z-index: 1;
-
 }
 
 .menu:hover .menubtn {

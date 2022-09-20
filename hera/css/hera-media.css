@@ -1,9 +1,15 @@
 @media (max-width: 1000px) {
+  body {
+    left: 8%;
+  }
+  #root {
+    width: 80vw;
+  }
   .profile {
-    right: 0vw;
+    right: 3vw;
   }
   .bucket {
-    right: 6vw;
+    right: 8vw;
   }
   .sign {
     right: -5vw;
@@ -11,5 +17,35 @@
   .sign > p {
     width: inherit;
     left: -20px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    left: 0;
+  }
+  #root {
+    width: 100vw;
+  }
+  .link {
+    top: 50px;
+    height: 200vh;
+    line-height: none;
+  }
+  .link > a {
+    width: 100%;
+    height: 3vh;
+  }
+  .link > a:hover {
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+  }
+  .menu:hover .link {
+    width: 80%;
+    height: 260%;
+    flex-direction: column;
+  }
+  .bucket {
+    right: 15vw;
   }
 }/*# sourceMappingURL=hera-media.css.map */

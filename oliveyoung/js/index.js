@@ -88,3 +88,11 @@ console.log(notice)
 
 notice.style.height = "10%";
 notice.style.marginTop = '100px'
+
+
+
+const lalo = document.querySelector('.lalo > img')
+console.log(lalo)
+
+lalo.style.width = '116%'
+lalo.style.height = '367px'
