@@ -95,4 +95,4 @@ const lalo = document.querySelector('.lalo > img')
 console.log(lalo)
 
 lalo.style.width = '116%'
-lalo.style.height = '367px'
+lalo.style.height = '407px'

@@ -11,7 +11,7 @@ upperbox.addEventListener('click', ()=>{
   login.style.left = '40%';
   login.style.border = '1px solid #000';
   login.style.position = 'fixed';
- login.style.opacity = '100%';
+  login.style.opacity = '100%';
   login.style.background = '#fff';
 
   const root = document.getElementById('root')
@@ -45,4 +45,6 @@ deletelog.addEventListener('click', function(){
 })
 
 
+const titlebox = document.createElement('h3')
+titlebox.textContent = '로그인'
 
