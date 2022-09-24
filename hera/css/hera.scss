@@ -18,7 +18,7 @@ body{
 
 #root {
   width: 50vw;
-  height: 400vh;
+  height: 200vh;
   overflow: hidden;
 
   /*로고 창*/
@@ -170,6 +170,30 @@ body{
   z-index: 1;
 }
 
+// 광고
+
+.ppl{
+  margin-top: 120px;
+  width: 50vw;
+  height: 30vh;
+  &>img{
+    width: inherit;
+    height: inherit;
+  }
+}
+
+//section
+
+section{
+  width: 100%;
+  height: 30vh;
+  border: 1px solid #000;
+  &>h2{
+    width: inherit;
+    text-align: center;
+  }
+}
+
 
 
 .personal-test {
@@ -206,36 +230,3 @@ body{
 
 }
 
-
-.title {
-  width: inherit;
-  height: 8vw;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2vw;
-}
-
-.number1,
-.number2,
-.number3,
-.number4 {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-
-  &>img {
-    width: inherit;
-    height: inherit;
-  }
-
-}
-
-
-
-
-
-.on {
-  display: none;
-}

@@ -23,6 +23,10 @@
       left: -20px;
     }
   }
+  
+  .ppl{
+    width: 100%;
+  }
 }
 
 @media(max-width: 500px) {
@@ -62,4 +66,7 @@
       right: 15vw;
     }
 
+    .ppl{
+      width: 100%;
+    }
   }

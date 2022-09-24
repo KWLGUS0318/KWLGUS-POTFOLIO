@@ -18,6 +18,9 @@
     width: inherit;
     left: -20px;
   }
+  .ppl {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   body {
@@ -47,5 +50,8 @@
   }
   .bucket {
     right: 15vw;
+  }
+  .ppl {
+    width: 100%;
   }
 }/*# sourceMappingURL=hera-media.css.map */
