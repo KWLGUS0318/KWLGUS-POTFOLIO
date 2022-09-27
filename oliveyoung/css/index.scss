@@ -8,6 +8,7 @@
   --maincolor: #9BCE26;
   --brandColor: #fceac8;
   --gray: #ddd;
+  --lightpink :#f27370;
 }
 
 @mixin display {
@@ -105,6 +106,10 @@ header {
       cursor: pointer;
       color: #999;
       font-size: 0.8rem;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 }
@@ -268,7 +273,16 @@ main {
   &>div {
     width: 50%;
     height: 100%;
-    @include display();
+
+    &>span {
+      @include hundred();
+      line-height: 2;
+      &>h4{
+        margin-top: 50px;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+    }
 
     &>img {
       width: 100%;
@@ -276,8 +290,48 @@ main {
       object-fit: cover;
     }
   }
+
 }
 
+.sale-percent{
+  width: 80%;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-top: 20px;
+  color: var(--lightpink);
+}
+
+.price { 
+text-decoration: line-through;
+color: #888;
+font-size: 1.8rem
+}
+.sale-price {
+  position: relative;
+  top: -50px;
+  width: 80%;
+  text-align: right;
+  font-size: 2.3rem
+}
+
+
+.purchase{
+  width: 80%;
+  @include display();
+  margin-top: -30px;
+  &>button{
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 40%;
+    height: 5vh;
+    background-color: #fff;
+    border: 3px solid var(--lightpink);
+    &:hover{
+      background-color: var(--lightpink);
+      color: #fff
+    }
+  }
+}
 .health {
   &>h3 {
     @include h3-style();
@@ -304,6 +358,8 @@ main {
 
 }
 
+
+
 .skin-type {
   &>h3 {
     @include h3-style();
@@ -317,7 +373,6 @@ main {
     &>div {
       width: 50%;
       height: 100%;
-      border: 1px solid black;
 
     }
   }
@@ -479,14 +534,32 @@ main {
   @include hundred();
 
   &>div {
-    position: absolute;
-    width: 100%;
+    width: 45%;
     height: 18.36%;
     background-color: #fff;
-    visibility: hidden;
+    position: absolute;
+
+    ;
+    text-align: center;
+    &>div{
+      @include hundred();
+      position: absolute;
+      @include hundred();
+      background-color: #fff;
+      &>h3{
+        @include display();
+        height: 100px;
+      }
+      &>p{
+        height: 30px;
+        @include display();
+        font-weight: 800;
+      }
+      &>span{
+        line-height: 2.5;
+        font-size: 1rem;
+      }
+    }
   }
 }
 
-.on {
-  visibility: visible;
-}

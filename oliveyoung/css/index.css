@@ -9,6 +9,7 @@
   --maincolor: #9BCE26;
   --brandColor: #fceac8;
   --gray: #ddd;
+  --lightpink:#f27370;
 }
 
 #root {
@@ -72,6 +73,9 @@ header > ul > li:nth-child(1) > img {
   cursor: pointer;
   color: #999;
   font-size: 0.8rem;
+}
+.upper-Box > ul > li:hover {
+  color: #000;
 }
 
 /**왼쪽 고정 박스**/
@@ -216,15 +220,64 @@ main > section > div {
 .care > div {
   width: 50%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.care > div > span {
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+}
+.care > div > span > h4 {
+  margin-top: 50px;
+  text-align: left;
+  font-size: 1.5rem;
 }
 .care > div > img {
   width: 100%;
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.sale-percent {
+  width: 80%;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-top: 20px;
+  color: var(--lightpink);
+}
+
+.price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.8rem;
+}
+
+.sale-price {
+  position: relative;
+  top: -50px;
+  width: 80%;
+  text-align: right;
+  font-size: 2.3rem;
+}
+
+.purchase {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+.purchase > button {
+  margin-right: 10px;
+  border-radius: 20px;
+  width: 40%;
+  height: 5vh;
+  background-color: #fff;
+  border: 3px solid var(--lightpink);
+}
+.purchase > button:hover {
+  background-color: var(--lightpink);
+  color: #fff;
 }
 
 .health > h3 {
@@ -269,7 +322,6 @@ main > section > div {
 .skin-type > div > div {
   width: 50%;
   height: 100%;
-  border: 1px solid black;
 }
 
 .type > div {
@@ -453,13 +505,34 @@ main > section > div {
   height: 100%;
 }
 .type-sort > div {
-  position: absolute;
-  width: 100%;
+  width: 45%;
   height: 18.36%;
   background-color: #fff;
-  visibility: hidden;
+  position: absolute;
+  text-align: center;
 }
-
-.on {
-  visibility: visible;
+.type-sort > div > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.type-sort > div > div > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.type-sort > div > div > p {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+.type-sort > div > div > span {
+  line-height: 2.5;
+  font-size: 1rem;
 }/*# sourceMappingURL=index.css.map */

@@ -96,3 +96,37 @@ console.log(lalo)
 
 lalo.style.width = '116%'
 lalo.style.height = '407px'
+
+const logIn = document.querySelector('.upper-Box > ul > li')
+console.log(logIn)
+
+logIn.addEventListener('click',()=>{
+  location.href = 'http://127.0.0.1:5500/oliveyoung/html/Login-page.html'
+})
+
+const oliyskin = document.querySelector('.oily-skin')
+const oily = document.querySelector('.oily')
+
+const dryskin = document.querySelector('.dry-skin')
+const dry = document.querySelector('.dry')
+
+
+const sensitiveskin = document.querySelector('.sensitive-skin')
+const sensitive = document.querySelector('.sensitive')
+
+
+const complexeskin = document.querySelector('.complex-skin')
+const complex = document.querySelector('.complex')
+
+let skintype = function(type,skin1,skin2,skin3,skin4){
+  type.addEventListener('click',()=>{
+    skin1.style.zIndex = 4;
+    skin2.style.zIndex = 3;
+    skin3.style.zIndex = 2;
+    skin4.style.zIndex = 1;
+  })
+}
+
+skintype(oliyskin,oily,sensitive,dry,complex);
+skintype(dryskin,dry,sensitive,oily,complex);skintype(complexeskin,complex,sensitive,dry,oily);
+skintype(sensitiveskin,sensitive,oily,dry,complex);

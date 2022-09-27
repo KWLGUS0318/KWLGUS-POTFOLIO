@@ -48,3 +48,5 @@ deletelog.addEventListener('click', function(){
 const titlebox = document.createElement('h3')
 titlebox.textContent = '로그인'
 
+const logIn = document.querySelector('upper-Box > ul > li')
+console.log(logIn)
