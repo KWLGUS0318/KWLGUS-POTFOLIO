@@ -5,13 +5,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --maincolor: #9BCE26;
+  --brandColor: #fceac8;
+  --gray: #ddd;
+}
+
 #root {
   width: 100vw;
   height: 160vh;
 }
 
 header {
-  border: 1px solid #ddd;
+  border: 1px solid var(--gray);
   width: inherit;
   height: 90px;
   display: flex;
@@ -80,7 +86,7 @@ header > ul > li:nth-child(1) > img {
   height: 100%;
 }
 .slide > ul > li {
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px dotted var(--gray);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,8 +94,25 @@ header > ul > li:nth-child(1) > img {
   height: 10%;
   cursor: pointer;
 }
+.slide > ul > li > ul {
+  display: none;
+}
 .slide > ul > li:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.slide > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  left: 200px;
+}
+.slide > ul > li:hover > ul > li {
+  width: 200px;
+  list-style: none;
+  display: block;
+  margin-bottom: 5px;
+}
+.slide > ul > li:hover > ul > li:hover {
+  color: var(--maincolor);
 }
 .slide > ul > li:active {
   box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -100,7 +123,7 @@ main {
   position: absolute;
   width: 85.5%;
   height: 60vh;
-  background-color: #ddd;
+  background-color: var(--gray);
   top: 90px;
   left: 15vw;
 }
@@ -148,12 +171,12 @@ main > section > div {
   cursor: pointer;
 }
 .brand > div > div:hover {
-  border: 1px solid #fceac8;
-  box-shadow: 1rem 1rem 1rem #fceac8;
+  border: 1px solid var(--brandColor);
+  box-shadow: 1rem 1rem 1rem var(--brandColor);
 }
 .brand > div > div:active {
   background-color: #fff;
-  box-shadow: inset 2rem 2rem 5rem #fceac8;
+  box-shadow: inset 2rem 2rem 5rem var(--brandColor);
 }
 
 .routine > h3 {
@@ -186,6 +209,22 @@ main > section > div {
 .care {
   width: 100%;
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.care > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.care > div > img {
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .health > h3 {
