@@ -5,14 +5,11 @@
   #root {
     width: 80vw;
   }
-  .profile {
-    right: 3vw;
-  }
   .bucket {
-    right: 8vw;
+    right: 10vw;
   }
   .sign {
-    right: -5vw;
+    right: 1vw;
   }
   .sign > p {
     width: inherit;
@@ -28,6 +25,12 @@
   }
   #root {
     width: 100vw;
+  }
+  .bucket {
+    right: 15vw;
+  }
+  .sign {
+    right: -2vw;
   }
   .link {
     top: 50px;
@@ -47,9 +50,6 @@
     width: 80%;
     height: 260%;
     flex-direction: column;
-  }
-  .bucket {
-    right: 15vw;
   }
   .ppl {
     width: 100%;

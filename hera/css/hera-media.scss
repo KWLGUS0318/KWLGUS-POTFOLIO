@@ -7,24 +7,23 @@
     width: 80vw;
   }
 
-  .profile {
-    right: 3vw;
+  .bucket{
+    right: 10vw;
   }
 
-  .bucket {
-    right: 8vw;
-  }
+
+
 
   .sign {
-    right: -5vw;
+    right: 1vw;
 
     &>p {
       width: inherit;
       left: -20px;
     }
   }
-  
-  .ppl{
+
+  .ppl {
     width: 100%;
   }
 }
@@ -38,6 +37,13 @@
     width: 100vw;
   }
 
+  .bucket{
+    right: 15vw;
+  }
+
+  .sign{
+    right: -2vw;
+  }
   .link {
     top: 50px;
     height: 200vh;
@@ -62,11 +68,9 @@
   }
 
 
-    .bucket {
-      right: 15vw;
-    }
 
-    .ppl{
-      width: 100%;
-    }
+
+  .ppl {
+    width: 100%;
   }
+}

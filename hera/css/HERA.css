@@ -29,10 +29,10 @@ body {
 }
 
 .profile {
-  width: 30px;
   position: absolute;
   top: 70px;
   right: 5vw;
+  color: #000;
 }
 
 .bucket {
@@ -40,6 +40,7 @@ body {
   position: absolute;
   right: 8vw;
   top: 70px;
+  color: #000;
 }
 
 /* 회원가입 말풍선 */
@@ -47,7 +48,7 @@ body {
   position: absolute;
   width: 80px;
   height: 30px;
-  right: 2.5vw;
+  right: 3vw;
   top: 115px;
   background-color: #000;
   border-radius: 5px;
