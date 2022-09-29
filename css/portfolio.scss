@@ -51,16 +51,21 @@
   background-image: linear-gradient(90deg, rgb(118, 154, 49) 10%, #526b22 25%);
 }
 
-.hera {
+.hera, .add, .photo {
   width: 15vw;
   height: 25vh;
 
   position: relative;
-  top: 90px;
+  top: 120px;
   left: 35vw;
   z-index: 2;
   cursor: default;
 
+
+}
+.add{
+  top: 80px;
+  left: 50vw;
 
 }
 
@@ -76,19 +81,11 @@
 }
 
 
-.photo {
-  width: 19vw;
-  height: 25vh;
-
-  position: relative;
-  top: -10px;
-  left: 35vw;
-  z-index: 5;
-  cursor: default;
-
+.photo{
+  top: 70px;
 }
 
-.hera-ex {
+.hera-ex, .diary-ex, .photo-ex {
   color: #fff;
   position: relative;
   text-align: center;
@@ -101,28 +98,11 @@
 }
 
 .diary-ex {
-  color: #fff;
-  position: relative;
-  top: -210px;
-  left: -180px;
-  line-height: 2;
-  text-align: center;
-  @include open();
-  @include hover();
-
+  top: -200px;
+ left: -200px;
 }
 
-.photo-ex {
-  position: relative;
-  left: 55vw;
-  bottom: 300px;
-  color: #fff;
-  z-index: 3;
-  line-height: 2.5;
-  @include open();
-  @include hover();
 
-}
 
 
 

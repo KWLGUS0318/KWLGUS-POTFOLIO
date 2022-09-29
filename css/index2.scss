@@ -20,11 +20,7 @@
 }
 @mixin frame {
   width: 15vw;
-  position: relative;
-  right: 10vw; top: -10vw;
-  &:active{
-    width: 18vw;
-  }
+  position: absolute;
 }
 
 #root {
@@ -64,16 +60,19 @@ section{
   align-items: center;
   justify-content: right;
 
-&>img:nth-child(1){
+&>img:nth-child(1), &>img:nth-child(2),&>img:nth-child(3){
 @include frame();
+top: 60px; right: 500px;
 }
-
-
 &>img:nth-child(2){
-@include frame();
+  width: 20vw;
+  right: 110px; top: 100px;
+}
+&>img:nth-child(3){
+  width: 20vw;
+  top: 470px; right: 430px;
 
 }
-
 &>a>p{
   position: absolute;
   font-size: 3rem;
@@ -173,7 +172,7 @@ box-shadow: inset 30px 4px 4px rgba(0, 0, 0, 0.25);
 
 .door-front>img{
   position: relative;
-  bottom: -60px;
+  bottom: -70px;
   left: 8vw;
 }
 

@@ -16,14 +16,19 @@
   background-image: linear-gradient(90deg, rgb(118, 154, 49) 10%, #526b22 25%);
 }
 
-.hera {
+.hera, .add, .photo {
   width: 15vw;
   height: 25vh;
   position: relative;
-  top: 90px;
+  top: 120px;
   left: 35vw;
   z-index: 2;
   cursor: default;
+}
+
+.add {
+  top: 80px;
+  left: 50vw;
 }
 
 .book-diary {
@@ -37,16 +42,10 @@
 }
 
 .photo {
-  width: 19vw;
-  height: 25vh;
-  position: relative;
-  top: -10px;
-  left: 35vw;
-  z-index: 5;
-  cursor: default;
+  top: 70px;
 }
 
-.hera-ex {
+.hera-ex, .diary-ex, .photo-ex {
   color: #fff;
   position: relative;
   text-align: center;
@@ -54,56 +53,21 @@
   left: 10vw;
   line-height: 2.5;
 }
-.hera-ex > a > img {
+.hera-ex > a > img, .diary-ex > a > img, .photo-ex > a > img {
   position: relative;
   top: 1vw;
   -webkit-animation: 4s open infinite;
           animation: 4s open infinite;
 }
-.hera-ex > a > img:hover {
+.hera-ex > a > img:hover, .diary-ex > a > img:hover, .photo-ex > a > img:hover {
   -webkit-animation: none;
           animation: none;
   transform: rotate(8deg);
 }
 
 .diary-ex {
-  color: #fff;
-  position: relative;
-  top: -210px;
-  left: -180px;
-  line-height: 2;
-  text-align: center;
-}
-.diary-ex > a > img {
-  position: relative;
-  top: 1vw;
-  -webkit-animation: 4s open infinite;
-          animation: 4s open infinite;
-}
-.diary-ex > a > img:hover {
-  -webkit-animation: none;
-          animation: none;
-  transform: rotate(8deg);
-}
-
-.photo-ex {
-  position: relative;
-  left: 55vw;
-  bottom: 300px;
-  color: #fff;
-  z-index: 3;
-  line-height: 2.5;
-}
-.photo-ex > a > img {
-  position: relative;
-  top: 1vw;
-  -webkit-animation: 4s open infinite;
-          animation: 4s open infinite;
-}
-.photo-ex > a > img:hover {
-  -webkit-animation: none;
-          animation: none;
-  transform: rotate(8deg);
+  top: -200px;
+  left: -200px;
 }
 
 .shelf {
