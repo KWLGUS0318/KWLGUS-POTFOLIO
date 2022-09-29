@@ -6,6 +6,9 @@
 
 :root {
   --black: #000;
+  --gray: #ddd;
+  --relative: relative;
+  --white: #fff;
 }
 
 @mixin display {
@@ -14,63 +17,85 @@
   justify-content: center;
 }
 
+
+@mixin menu_bar {
+  width: 70px;
+  position: relative;
+  transition-duration: 1.2s;
+
+}
+
 #root {
   width: 100vw;
   height: 100vh;
-
-  &>nav {
-    width: 10vh;
-    height: 100%;
-    
-    &>ul {
-      border: 1px solid var(--black);
-      width: 150px;
-      height: inherit;
-      position: absolute;
-      top: 0;
-      &>li {
-        display: block;
-        width: 100px;
-        height: calc(100%/100);
-        border-radius: 10px;
-
+      &>nav {
+        width: 0;
+        height: 100%;
         background-color: var(--black);
-        position: relative;
-        top: 50px; left: 20px;
-        margin-bottom: 10px;
+        &:hover {
+          width: 20vh;
+          transition-duration: 2s;
+
+
+        &>ul {
+          display: block;
+          position: var(--relative);
+          top: 30px;
+          left: 20px;
+
+          &>li {
+            background-color: var(--white);
+
+            &:nth-child(1) {
+              @include menu_bar();
+              transform: rotate(90deg);
+              top: 60px;
+              left: 28px;
+            }
+
+            &:nth-child(2) {
+              @include menu_bar();
+              transform: rotate(45deg);
+              left: 5px;
+              top: 50px;
+            }
+
+            &:nth-child(3) {
+              @include menu_bar();
+
+              transform: rotate(-45deg);
+              left: 53px;
+              top: 25px;
+              ;
+            }
+          }
+        }
+
 
       }
 
-      &:hover {
-        transition-duration: 2s;
-        width: 40vw;
 
 
-        &>li:nth-child(1) {
-          width: 100px;
-          transition-duration: 1.2s;
-          transform: rotate(90deg);
-        }
 
-        &>li:nth-child(2) {
-          width: 80px;
-          transform: rotate(45deg);
-          transition-duration: 1.2s;
+      &>ul {
+        width: 150px;
+        height: inherit;
+        list-style: none;
+
+        &>li {
+
+          width: 60px;
+          height: 10px;
+          border-radius: 20px;
+
+          background-color: var(--black);
           position: relative;
-          left: 5px; top: 55px;
+          top: 50px;
+          left: 30px;
+          margin-bottom: 10px;
+
         }
 
-        &>li:nth-child(3) {
-          width: 80px;
-          transition-duration: 1.2s;
-          transform: rotate(-45deg);
-          position: relative;
-          left: 50px; top: 30px;;
-        }
       }
     }
-  }
-
-
-
 }

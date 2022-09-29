@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+  #root :root {
+    --white:#fff;
+  }
+  #root > nav {
+    width: 15vw;
+  }
+  #root > nav > ul {
+    display: none;
+  }
+  #root > nav > ul:hover #root > nav > ul {
+    display: block;
+  }
+  #root > nav > ul > li {
+    width: 20px;
+    background-color: var(--white);
+  }
+}/*# sourceMappingURL=carezone-media.css.map */

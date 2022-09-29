@@ -6,6 +6,9 @@
 
 :root {
   --black: #000;
+  --gray: #ddd;
+  --relative: relative;
+  --white: #fff;
 }
 
 #root {
@@ -13,49 +16,59 @@
   height: 100vh;
 }
 #root > nav {
-  width: 10vh;
+  width: 0;
   height: 100%;
+  background-color: var(--black);
+}
+#root > nav:hover {
+  width: 20vh;
+  transition-duration: 2s;
+}
+#root > nav:hover > ul {
+  display: block;
+  position: var(--relative);
+  top: 30px;
+  left: 20px;
+}
+#root > nav:hover > ul > li {
+  background-color: var(--white);
+}
+#root > nav:hover > ul > li:nth-child(1) {
+  width: 70px;
+  position: relative;
+  transition-duration: 1.2s;
+  transform: rotate(90deg);
+  top: 60px;
+  left: 28px;
+}
+#root > nav:hover > ul > li:nth-child(2) {
+  width: 70px;
+  position: relative;
+  transition-duration: 1.2s;
+  transform: rotate(45deg);
+  left: 5px;
+  top: 50px;
+}
+#root > nav:hover > ul > li:nth-child(3) {
+  width: 70px;
+  position: relative;
+  transition-duration: 1.2s;
+  transform: rotate(-45deg);
+  left: 53px;
+  top: 25px;
 }
 #root > nav > ul {
-  border: 1px solid var(--black);
   width: 150px;
   height: inherit;
-  position: absolute;
-  top: 0;
+  list-style: none;
 }
 #root > nav > ul > li {
-  display: block;
-  width: 100px;
-  height: 1%;
-  border-radius: 10px;
+  width: 60px;
+  height: 10px;
+  border-radius: 20px;
   background-color: var(--black);
   position: relative;
   top: 50px;
-  left: 20px;
+  left: 30px;
   margin-bottom: 10px;
-}
-#root > nav > ul:hover {
-  transition-duration: 2s;
-  width: 40vw;
-}
-#root > nav > ul:hover > li:nth-child(1) {
-  width: 100px;
-  transition-duration: 1.2s;
-  transform: rotate(90deg);
-}
-#root > nav > ul:hover > li:nth-child(2) {
-  width: 80px;
-  transform: rotate(45deg);
-  transition-duration: 1.2s;
-  position: relative;
-  left: 5px;
-  top: 55px;
-}
-#root > nav > ul:hover > li:nth-child(3) {
-  width: 80px;
-  transition-duration: 1.2s;
-  transform: rotate(-45deg);
-  position: relative;
-  left: 50px;
-  top: 30px;
 }/*# sourceMappingURL=carezone.css.map */
