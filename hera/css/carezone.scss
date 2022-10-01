@@ -9,6 +9,7 @@
   --gray: #ddd;
   --relative: relative;
   --white: #fff;
+  --darkgray: #888;
 }
 
 @mixin display {
@@ -19,83 +20,133 @@
 
 
 @mixin menu_bar {
-  width: 70px;
+  width: 40px;
   position: relative;
   transition-duration: 1.2s;
-
 }
 
 #root {
   width: 100vw;
   height: 100vh;
-      &>nav {
-        width: 0;
-        height: 100%;
+
+  &>nav {
+    position: fixed;
+    right: 0;
+    width: 10vw;
+    height: 100vh;
+    background-color: var(--white);
+
+    &:hover {
+      width: 15vw;
+      height: inherit;
+      transition-duration: 2s;
+
+
+      &>ol {
+        width: inherit;
+        height: 100px;
+        display: block;
+        position: var(--relative);
+        top: 30px;
+        left: 20px;
+        margin-bottom: 15px;
+
+
+        &>li {
+          background-color: var(--black);
+
+          &:nth-child(1) {
+            @include menu_bar();
+            transform: rotate(90deg);
+            top: 50px;
+            left: 70px;
+          }
+
+          &:nth-child(2) {
+            @include menu_bar();
+            transform: rotate(45deg);
+            left: 59px;
+            top: 38px;
+          }
+
+          &:nth-child(3) {
+            @include menu_bar();
+
+            transform: rotate(-45deg);
+            left: 82px;
+            top: 18px;
+            ;
+          }
+        }
+      }
+
+    }
+
+
+
+
+    &>ol {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+      list-style: none;
+
+      &>li {
+
+        width: 60px;
+        height: 10px;
+        border-radius: 10px;
         background-color: var(--black);
+        position: relative;
+        top: 50px;
+        right: -50px;
+        margin-bottom: 10px;
+
+      }
+
+    }
+
+    &>ul {
+      width: 100%;
+      height: 600px;
+      position: relative;
+      top: 35px;
+
+      &>a {
+        text-decoration: none;
+
         &:hover {
-          width: 20vh;
-          transition-duration: 2s;
+          color: var(--black);
 
 
-        &>ul {
-          display: block;
-          position: var(--relative);
-          top: 30px;
-          left: 20px;
+        }
 
-          &>li {
-            background-color: var(--white);
+        color: var(--darkgray);
 
-            &:nth-child(1) {
-              @include menu_bar();
-              transform: rotate(90deg);
-              top: 60px;
-              left: 28px;
-            }
+        &>li {
+          border-radius: 10px;
+          &:active{
+            box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          }
+          @include display();
+          list-style: none;
+          width: inherit;
+          height: calc(600px/6);
+          border: 1px dotted var(--darkgray);
 
-            &:nth-child(2) {
-              @include menu_bar();
-              transform: rotate(45deg);
-              left: 5px;
-              top: 50px;
-            }
+          &:hover {
+            border: 1px solid var(--black)
+          }
 
-            &:nth-child(3) {
-              @include menu_bar();
+          &>i {
+            @include display();
 
-              transform: rotate(-45deg);
-              left: 53px;
-              top: 25px;
-              ;
+            &>p {
+              padding-left: 5px;
             }
           }
         }
-
-
-      }
-
-
-
-
-      &>ul {
-        width: 150px;
-        height: inherit;
-        list-style: none;
-
-        &>li {
-
-          width: 60px;
-          height: 10px;
-          border-radius: 20px;
-
-          background-color: var(--black);
-          position: relative;
-          top: 50px;
-          left: 30px;
-          margin-bottom: 10px;
-
-        }
-
       }
     }
+  }
 }

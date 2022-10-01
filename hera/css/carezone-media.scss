@@ -1,24 +1,51 @@
-@media (max-width:500px) {
-  #root{
-    :root{
-      --white :#fff;
-    }
-    &>nav{
+@media(max-width:800px) {
+  #root {
+    &>nav {
       width: 15vw;
-      &>ul{
-        display: none;
-        &:hover{
-          #root>nav>ul{
-            display: block;
-          }
-        }
+      background-color: #fff;
 
-        &>li{
-          width: 20px;
-          background-color: var(--white);
+
+      &:hover {
+        &>ol {
+          left: -30px;
+        }
+      }
+
+      &>ol {
+        position: relative;
+        right: 20px;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+@media(max-width:500px) {
+  #root {
+    &>nav {
+      border: none;
+      &>ul>a>li{
+        font-size: 0.5rem;
+      }
+
+
+      &>ol {
+        visibility: hidden;
+      }
+
+      &>ul {
+        position: absolute;
+        top: 0;
+        height: 750px;
+
+        &>a>li {
+          height: calc(750px/6);
         }
       }
     }
   }
-
 }
