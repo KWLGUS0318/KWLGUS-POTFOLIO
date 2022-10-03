@@ -37,3 +37,27 @@ else{
 
 });
   
+
+const designSection = document.querySelector('.design_open')
+console.log(designSection)
+
+const designTop = document.querySelector('.top')
+console.log(designTop)
+
+const designBottom = document.querySelector('.bottom')
+console.log(designBottom)
+
+
+designSection.addEventListener('click', function(){
+  designTop.style.top = -9000+ 'px';
+  designTop.style.transitionDuration = '8s'
+  designBottom.style.bottom = -250 + 'vw'
+  designBottom.style.transitionDuration = '5s'
+ 
+  
+
+  const OpenDuration = setTimeout(() => {
+    location.href = 'design.html'
+  }, 1000);
+})
+

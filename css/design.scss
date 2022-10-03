@@ -1,0 +1,156 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#root{
+  width: 100vw;
+  height: 300vh;
+  overflow: hidden;
+}
+
+:root{
+  --circle : 200px;
+  --black : #000;
+  --blue : rgb(18, 18, 223);
+  --darkyellow :  rgba(229, 223, 87, 0.3);
+  --white : #fff;
+  --100px : 100px;
+}
+#flower {
+  width: var(--100px);
+  height: var(--100px);
+  position: absolute;
+  left: 60px; top: 200px;
+}
+
+@mixin display {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+.group1{
+  width: var(--100px);
+  height: 150px;
+  position: fixed;
+  bottom: 0px; right: 130px;
+  z-index: 3;
+  &>p{
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    margin: 50px 0 0 70px;
+    font-weight: 500;
+    color: var(--blue);
+  }
+  &:hover{
+    visibility: hidden;
+    li{
+      opacity: 10%;
+    }
+    .top{
+      cursor: pointer;
+      width: 200px;
+      height: 150px;
+      visibility: visible;
+      margin-left: 30px;
+      background-color: var(--blue);
+  }
+}
+.top{
+  border-radius: var(--100px);
+  border: 1px solid var(--black);
+  text-align: center;
+  visibility: hidden;
+  background-color: var(--blue0);
+  opacity: 1;
+  color: #fff;
+  font-size: 2rem;
+}
+    &> li {
+      width: var(--circle);
+      height: 50px;
+      background: var(--darkyellow);
+      opacity: 50%;
+      border-radius: 122px;
+      list-style: none;
+      position: absolute;
+  }
+  }
+
+  .list{
+    width: var(--circle);
+    height: var(--circle);
+    border-radius:var(--100px);
+    position: fixed;
+    top: -40px; left: -30px;
+   background-color: var(--white);
+   cursor: pointer;
+   font-size: 2rem;
+   &:hover{
+    border: 5px dotted var(--black);
+   }
+
+  }
+
+
+  .circle{
+    border: 1px solid var(--black);
+    width: var(--100px);
+    height:var(--100px);
+    border-radius: 50px;
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    line-height: 3.5;
+    color: var(--white);
+    border-color: var(--blue);
+    color: var(--black);
+    &:hover{
+      background-color: var(--blue);
+    color: var(--white);
+
+    }
+  }
+  
+  
+  .web{
+    top: 0;
+    left: 200px;
+  }
+  .logo{
+    top: 140px;
+    left: 160px;
+  }
+  .illust{
+    left: 20px;
+    top: 180px;
+  }
+  
+  .on{
+    display: block;
+    animation: circleopen 1.5s;
+
+  }
+  .off{
+    display: none;
+  }
+
+  @keyframes circleopen {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.8;
+    }
+    100%{opacity: 1;}
+  }
+
+section{
+  position: relative;
+  border: 1px solid black;
+  width: 80vw;
+  height: 100vh;
+}
+
+main{
+  position: absolute;
+  right: 0; top:0;
+}
