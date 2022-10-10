@@ -12,6 +12,7 @@
 
 :root {
   --circle: 200px;
+  --top: 150px;
   --black: #000;
   --blue: rgb(18, 18, 223);
   --darkyellow: rgba(229, 223, 87, 0.3);
@@ -31,17 +32,18 @@
   width: var(--100px);
   height: 150px;
   position: fixed;
-  bottom: 0px;
-  right: 130px;
+  bottom: 50px;
+  right: 100px;
   z-index: 3;
 }
 .group1 > p {
   font-size: 2rem;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  margin: 50px 0 0 70px;
   font-weight: 500;
-  color: var(--blue);
+  color: #fff;
+  top: 90px;
+  left: 35px;
 }
 .group1:hover {
   visibility: hidden;
@@ -51,26 +53,26 @@
 }
 .group1:hover .top {
   cursor: pointer;
-  width: 200px;
+  width: 130px;
   height: 150px;
   visibility: visible;
-  margin-left: 30px;
-  background-color: var(--blue);
+  background: linear-gradient(180deg, #686FFD 0%, rgba(234, 157, 236, 0.708333) 29.17%, rgba(248, 208, 67, 0.776042) 57.29%, rgba(241, 167, 63, 0) 79.07%, rgba(104, 111, 253, 0.427083) 79.07%);
+  border: none;
+  color: #fff;
 }
 .group1 .top {
   border-radius: var(--100px);
   border: 1px solid var(--black);
   text-align: center;
   visibility: hidden;
-  background-color: var(--blue0);
   opacity: 1;
-  color: #fff;
+  color: #111;
   font-size: 2rem;
 }
 .group1 > li {
-  width: var(--circle);
+  background: linear-gradient(180deg, #686FFD 0%, rgba(234, 157, 236, 0.708333) 29.17%, rgba(248, 208, 67, 0.776042) 57.29%, rgba(241, 167, 63, 0) 79.07%, rgba(104, 111, 253, 0.427083) 79.07%);
+  width: var(--top);
   height: 50px;
-  background: var(--darkyellow);
   opacity: 50%;
   border-radius: 122px;
   list-style: none;
@@ -82,31 +84,34 @@
   height: var(--circle);
   border-radius: var(--100px);
   position: fixed;
-  top: -40px;
-  left: -30px;
-  background-color: var(--white);
+  top: -30px;
+  left: -40px;
   cursor: pointer;
   font-size: 2rem;
+  background: linear-gradient(-45deg, #686FFD, #f1a73f, #686FFD, #f1a73f);
+  background-position: 0 10%;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .list:hover {
-  border: 5px dotted var(--black);
+  border: 1px solid #fff;
 }
 
 .circle {
-  border: 1px solid var(--black);
   width: var(--100px);
   height: var(--100px);
   border-radius: 50px;
   position: fixed;
   cursor: pointer;
   text-align: center;
-  line-height: 3.5;
+  line-height: 5.5;
   color: var(--white);
   border-color: var(--blue);
   color: var(--black);
+  border: 1px solid rgb(142, 107, 238);
 }
 .circle:hover {
-  background-color: var(--blue);
+  background-color: rgb(142, 107, 238);
   color: var(--white);
 }
 

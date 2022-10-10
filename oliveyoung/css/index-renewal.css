@@ -180,7 +180,7 @@ header > ul > li:nth-child(1) > img {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: absolute;
   top: 250px;
   z-index: 3;
@@ -204,12 +204,33 @@ header > ul > li:nth-child(1) > img {
 .slider_box {
   width: 1200px;
   height: 350px;
-  border: 1px solid var(--lightpink);
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 120px;
   left: 430px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.slider_box:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  position: relative;
+  top: 150px;
+  left: 600px;
+  background-color: #fff;
+  z-index: 2;
+}
+.slider_box:nth-child(1) > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider_box:nth-child(2) {
+  width: 80%;
+  height: 300px;
+  position: relative;
+  left: 200px;
+  top: -150px;
+  background-color: #888;
 }/*# sourceMappingURL=index-renewal.css.map */

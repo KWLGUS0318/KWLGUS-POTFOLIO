@@ -10,15 +10,22 @@
   justify-content: center;
 }
 
-body{
+@mixin icon {
+  position: absolute;
+  top: 70px;
+  color: #000;
+
+}
+
+body {
   border: 1px dotted black;
   position: absolute;
-  left: 25%;  
+  left: 25%;
 }
 
 #root {
   width: 50vw;
-  height: 200vh;
+  height: 300vh;
   overflow: hidden;
 
   /*로고 창*/
@@ -45,13 +52,6 @@ body{
   @include icon();
 }
 
-@mixin icon{
-  position: absolute;
-  top: 70px;
-  color: #000;
-
-
-}
 
 
 /* 회원가입 말풍선 */
@@ -104,12 +104,12 @@ body{
 /* 바탕*/
 
 .menu {
-  width: 100%;
+  width: 50vw;
   height: 7vh;
   background-color: #000;
   z-index: 1;
-  position: relative;
-  top: 140px;
+  position: fixed;
+  top: 120px;
 
   @include array();
 
@@ -132,7 +132,7 @@ body{
 /* a link*/
 
 .link {
-  width:50vw;
+  width: 50vw;
   height: 10vh;
   display: none;
   position: absolute;
@@ -150,6 +150,7 @@ body{
     z-index: 1;
     text-align: center;
     @include array();
+
     &:hover {
       background-color: #000;
       color: #fff;
@@ -177,25 +178,28 @@ body{
 
 // 광고
 
-.ppl{
-  margin-top: 120px;
+.ppl {
   width: 50vw;
-  height: 30vh;
-  &>img{
-    width: inherit;
-    height: inherit;
+  height: 50vh;
+  background-color: #58B3DB;
+  &>img {
+    width: 100%;
+    height: 135%;
+    object-fit: contain;
   }
 }
 
 //section
 
-section{
+section {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   border: 1px solid #000;
-  &>h2{
+
+  &>h2 {
     width: inherit;
     text-align: center;
+    height: 10%;
   }
 }
 
@@ -235,3 +239,13 @@ section{
 
 }
 
+.artist{
+  width: 100%;
+  height: 90%;
+  @include array();
+  &>img{
+    width: calc(100%/3);
+    height: 100%;
+    cursor: pointer;
+  }
+}

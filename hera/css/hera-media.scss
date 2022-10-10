@@ -7,7 +7,7 @@
     width: 80vw;
   }
 
-  .bucket{
+  .bucket {
     right: 10vw;
   }
 
@@ -26,6 +26,10 @@
   .ppl {
     width: 100%;
   }
+
+  .menu{
+    width: 81.6%;
+  }
 }
 
 @media(max-width: 500px) {
@@ -37,13 +41,18 @@
     width: 100vw;
   }
 
-  .bucket{
+
+  .menu{
+    width: 100%;
+  }
+  .bucket {
     right: 15vw;
   }
 
-  .sign{
+  .sign {
     right: -2vw;
   }
+
   .link {
     top: 50px;
     height: 200vh;

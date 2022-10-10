@@ -13,7 +13,7 @@ body {
 
 #root {
   width: 50vw;
-  height: 200vh;
+  height: 300vh;
   overflow: hidden;
   /*로고 창*/
 }
@@ -29,16 +29,16 @@ body {
 }
 
 .profile {
+  right: 5vw;
   position: absolute;
   top: 70px;
-  right: 5vw;
   color: #000;
 }
 
 .bucket {
   width: 35px;
-  position: absolute;
   right: 8vw;
+  position: absolute;
   top: 70px;
   color: #000;
 }
@@ -93,12 +93,12 @@ body {
 }
 /* 바탕*/
 .menu {
-  width: 100%;
+  width: 50vw;
   height: 7vh;
   background-color: #000;
   z-index: 1;
-  position: relative;
-  top: 140px;
+  position: fixed;
+  top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,23 +167,26 @@ body {
 }
 
 .ppl {
-  margin-top: 120px;
   width: 50vw;
-  height: 30vh;
+  height: 50vh;
+  background-color: #58B3DB;
 }
 .ppl > img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 135%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 section {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   border: 1px solid #000;
 }
 section > h2 {
   width: inherit;
   text-align: center;
+  height: 10%;
 }
 
 .personal-test {
@@ -214,4 +217,17 @@ section > h2 {
   width: inherit;
   height: 40vw;
   margin-top: 130px;
+}
+
+.artist {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artist > img {
+  width: 33.3333333333%;
+  height: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=hera.css.map */
