@@ -42,7 +42,7 @@
 }
 #root {
   width: 1920px;
-  height: 1080px;
+  height: 980px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -102,8 +102,8 @@ section {
 .right_section > a > p {
   position: var(--absolute);
   font-size: 3rem;
-  right: 0vw;
-  bottom: 0vw;
+  right: 50px;
+  bottom: 50px;
   padding: 0 4vw 2vw 1vw;
 }
 

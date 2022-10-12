@@ -11,6 +11,11 @@ body {
   left: 25%;
 }
 
+:root {
+  --yellow: #FFE500;
+  --100: 100%;
+}
+
 #root {
   width: 50vw;
   height: 300vh;
@@ -26,6 +31,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#root > header > a > img {
+  width: 100px;
 }
 
 .profile {
@@ -152,7 +160,7 @@ body {
 
 .menu:hover .link {
   width: 80%;
-  height: 100%;
+  height: var(--100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,14 +180,14 @@ body {
   background-color: #58B3DB;
 }
 .ppl > img {
-  width: 100%;
+  width: var(--100);
   height: 135%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 section {
-  width: 100%;
+  width: var(--100);
   height: 40vh;
   border: 1px solid #000;
 }
@@ -220,12 +228,12 @@ section > h2 {
 }
 
 .best {
-  width: 100%;
+  width: var(--100);
   height: 90%;
 }
 
 .main-section {
-  width: 100%;
+  width: var(--100);
   height: 90%;
   display: flex;
   align-items: center;
@@ -233,42 +241,199 @@ section > h2 {
   border: 2px solid red;
 }
 .main-section > img {
-  width: 33.3333333333%;
-  height: 100%;
+  width: calc(var(--100) / 3);
+  height: var(--100);
   cursor: pointer;
 }
 
-.best {
-  width: 50%;
-  height: 100%;
+.best-group {
+  width: var(--100);
+  height: var(--100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.best-group > div {
   border: 1px solid black;
+  width: 50vw;
+  height: inherit;
 }
-.best > div {
-  width: 100%;
-  height: 50%;
+.best-group > div > p {
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  left: 70px;
+  bottom: 13px;
 }
-.best > div > h2 {
-  width: 2vw;
-  height: 2vh;
-  border: 2px solid yellow;
-  position: absolute;
-}
-.best > img {
-  width: 33vw;
+.best-group > div > span {
+  position: relative;
+  right: 220px;
 }
 
-.best-img {
-  width: 50%;
-  height: 100%;
+.black_cushion {
+  position: relative;
+  left: 200px;
+}
+
+.plus {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 378px;
+}
+.plus > div {
+  width: 75px;
+  height: var(--100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-bottom: none;
+}
+.plus > div > img {
+  width: 20px;
+}
+
+.plus-extra {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid black;
+  left: 70px;
+  top: 22px;
 }
-.best-img > h2 {
-  width: 2vw;
-  height: 2vh;
-  border: 2px solid yellow;
-  position: absolute;
+.plus-extra > div {
+  border-right: 2px solid black;
+  border-bottom: none;
+  width: 50px;
+  height: var(--100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.best-img > img {
-  width: 100%;
+
+.best2 {
+  position: relative;
+  left: 70px;
+  bottom: 50px;
+}
+
+.best3 {
+  position: relative;
+  left: 70px;
+  bottom: 50px;
+}
+
+.best-extra > div {
+  height: 50%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.best-extra > div > div {
+  width: 50%;
+  height: var(--100);
+}
+.best-extra > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.best-extra > div > div > img {
+  position: relative;
+  top: 10px;
+}
+.best-extra > div > div > p {
+  font-size: 30px;
+  position: relative;
+  bottom: 35px;
+  left: 20px;
+}
+
+.group2 {
+  width: var(--100);
+  height: var(--100);
+  flex-direction: column;
+}
+.group2 > div {
+  width: var(--100);
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.best-number {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+.new {
+  width: var(--100);
+  height: var(--100);
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new > div {
+  width: calc(var(--100) / 4);
   height: inherit;
+}
+.new > div > div {
+  flex-direction: column;
+  width: var(--100);
+  height: 50%;
+  text-align: center;
+}
+.new > div > div > img {
+  width: 300px;
+  height: 130px;
+  margin-top: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.new > div > div > div {
+  width: var(--100);
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sample > div {
+  width: var(--100);
+  height: 50%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sample > div > button {
+  width: 100px;
+  height: var(--100);
+  border-radius: 50px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 360px solid #666666;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
 }/*# sourceMappingURL=hera.css.map */

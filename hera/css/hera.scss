@@ -27,6 +27,11 @@ body {
   left: 25%;
 }
 
+:root {
+  --yellow: #FFE500;
+  --100 : 100%;
+}
+
 #root {
   width: 50vw;
   height: 300vh;
@@ -41,6 +46,10 @@ body {
     z-index: 2;
 
     @include array();
+
+    &>a>img {
+      width: 100px;
+    }
   }
 
 }
@@ -168,7 +177,7 @@ body {
 
 .menu:hover .link {
   width: 80%;
-  height: 100%;
+  height: var(--100);
   @include array();
   z-index: 1;
 }
@@ -188,7 +197,7 @@ body {
   background-color: #58B3DB;
 
   &>img {
-    width: 100%;
+    width: var(--100);
     height: 135%;
     object-fit: contain;
   }
@@ -197,7 +206,7 @@ body {
 //section
 
 section {
-  width: 100%;
+  width: var(--100);
   height: 40vh;
   border: 1px solid #000;
 
@@ -245,62 +254,190 @@ section {
 }
 
 .best {
-  width: 100%;
+  width: var(--100);
   height: 90%;
 }
 
 .main-section {
-  width: 100%;
+  width: var(--100);
   height: 90%;
   @include array();
   border: 2px solid red;
 
 
   &>img {
-    width: calc(100%/3);
-    height: 100%;
+    width: calc(var(--100)/3);
+    height: var(--100);;
     cursor: pointer;
   }
 
 }
 
-.best {
-  width: 50%;
-  height: 100%;
-  border: 1px solid black;
+.best-group {
+  width: var(--100);;
+  height: var(--100);;
+  @include array();
 
   &>div {
-    width: 100%;
-    height: 50%;
+    border: 1px solid black;
+    width: calc(100vw/2);
+    height: inherit;
 
-    &>h2 {
-      @include h2-style();
+    &>p {
+      font-size: 30px;
+      font-weight: 400;
+      position: relative;
+      left: 70px; bottom: 13px;
     }
-
-    ;
+  &>span{
+    position: relative;
+    right: 220px;
   }
+  }
+ 
+}
 
-  &>img {
-    width: 33vw;
+.black_cushion{
+  position: relative;
+  left: 200px;
+}
+
+@mixin  plus {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  @include array();
+
+}
+
+.plus{
+ @include plus();
+  left: 378px;
+  &>div{
+    width: calc(150px/2);
+    height: var(--100);
+    @include array();
+    border: 2px solid black;
+    border-bottom: none;
+    &>img{
+      width: 20px;
+    }
   }
 }
 
-.best-img {
-  width: 50%;
-  height: 100%;
+.plus-extra{
+  @include plus();
   border: 1px solid black;
+  left: 70px;
+  top: 22px;
 
-  &>h2 {
-    width: 2vw;
-    height: 2vh;
-    border: 2px solid yellow;
-    position: absolute;
-
+  &>div{
+    border-right: 2px solid black;
+    border-bottom: none;
+    width: calc(100px/2);
+    height: var(--100);
+    @include array();
   }
+}
 
-  &>img {
-    width: 100%;
+.best2{
+  position: relative;
+  left: 70px; bottom: 50px;
+}
+
+.best3{
+  position: relative;
+  left: 70px; bottom: 50px;
+}
+.best-extra>div {
+  height: 50%;
+  border: 1px solid black;
+  @include array();
+&>div{
+  width: 50%;
+  height: var(--100);
+  &:nth-child(2){
+    @include array();
+    text-align: center;
+  }
+  &>img{
+    position: relative;
+    top: 10px;
+  }
+  &>p{
+    font-size: 30px;
+    position: relative;
+    bottom: 35px; left: 20px;
+  }
+}
+}
+.group2{
+  width: var(--100);
+  height: var(--100);
+  flex-direction: column;
+  
+  &>div{
+    width: var(--100);
+    height: 50%;
+    @include array();
+   
+  }
+ 
+}
+
+.best-number {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+.new{
+  width: var(--100);
+  height:var(--100);
+  border: 1px solid green;
+  @include array();
+  &>div{
+    width: calc(var(--100)/4);
     height: inherit;
+    &>div{
+      flex-direction: column;
+      width: var(--100);
+      height: 50%;
+      text-align: center;
+      &>img{
+        width: 300px;
+        height: 130px;
+        margin-top: 20px;
+        object-fit: contain;
+      }
+      &>div{
+        width: var(--100);
+        height: 50%;
+        @include array();
+      }
+    }
   }
+}
 
+.sample>div{
+  width: var(--100);
+  height: 50%;
+  margin-top: 30px;
+  @include array();
+  &>button{
+    width: 100px;
+    height: var(--100);
+    border-radius: 50px;
+    margin-left: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 360px solid #666666;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
 }
