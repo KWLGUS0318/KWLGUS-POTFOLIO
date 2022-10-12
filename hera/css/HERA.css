@@ -219,15 +219,56 @@ section > h2 {
   margin-top: 130px;
 }
 
-.artist {
+.best {
+  width: 100%;
+  height: 90%;
+}
+
+.main-section {
   width: 100%;
   height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 }
-.artist > img {
+.main-section > img {
   width: 33.3333333333%;
   height: 100%;
   cursor: pointer;
+}
+
+.best {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}
+.best > div {
+  width: 100%;
+  height: 50%;
+}
+.best > div > h2 {
+  width: 2vw;
+  height: 2vh;
+  border: 2px solid yellow;
+  position: absolute;
+}
+.best > img {
+  width: 33vw;
+}
+
+.best-img {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}
+.best-img > h2 {
+  width: 2vw;
+  height: 2vh;
+  border: 2px solid yellow;
+  position: absolute;
+}
+.best-img > img {
+  width: 100%;
+  height: inherit;
 }/*# sourceMappingURL=hera.css.map */
