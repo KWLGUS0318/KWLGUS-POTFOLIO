@@ -244,6 +244,7 @@ section {
   left: 180px;
   z-index: 2;
   background-color: #fff;
+  cursor: pointer;
 }
 .design_open:hover {
   border: 3px dotted #000;

@@ -93,9 +93,6 @@
   color: #fff;
   border: 1px solid #fff;
 }
-.list:hover {
-  border: 1px solid #fff;
-}
 
 .circle {
   width: var(--100px);

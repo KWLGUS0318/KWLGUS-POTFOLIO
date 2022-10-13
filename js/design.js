@@ -9,6 +9,8 @@ flower.addEventListener('click', function () {
   })
 })
 
+
+
 const web = document.querySelector('.web')
 const logo = document.querySelector('.logo')
 const illust = document.querySelector('.illust')

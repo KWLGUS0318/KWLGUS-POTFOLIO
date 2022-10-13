@@ -51,7 +51,7 @@
   background-image: linear-gradient(90deg, rgb(118, 154, 49) 10%, #526b22 25%);
 }
 
-.hera, .add, .photo {
+.oliveyoung, .add, .photo {
   width: 15vw;
   height: 25vh;
 
@@ -85,7 +85,7 @@
   top: 70px;
 }
 
-.hera-ex, .diary-ex, .photo-ex {
+.olive-ex, .diary-ex, .photo-ex {
   color: #fff;
   position: relative;
   text-align: center;
@@ -187,7 +187,7 @@
 }
 
 @media (max-width:500px) {
-  .hera {
+  .oliveyoung {
   @include photo1();
   @include bright();
   top: 90px
@@ -218,7 +218,7 @@
 
 
   
-  .hera-ex,.diary-ex,.photo-ex{display: none;}
+  .olive-ex,.diary-ex,.photo-ex{display: none;}
 
 
 }
