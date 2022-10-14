@@ -48,16 +48,13 @@ list.addEventListener('mousedown',()=>{
 })
 
 
-web.addEventListener('click',()=>{
-  location.href = '#web'
-})
 
-
-logo.addEventListener('click',()=>{
-  location.href = '#logo'
-})
-
-
-illust.addEventListener('click',()=>{
-  location.href = '#illust'
-})
+function pagechange (a,place){
+  a.addEventListener('click',()=>{
+    location.href = place;
+  })
+  
+}
+pagechange(web,'#web')
+pagechange(logo,'#logo')
+pagechange(illust,'#illust')

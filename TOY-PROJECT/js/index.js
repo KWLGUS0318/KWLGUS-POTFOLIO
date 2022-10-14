@@ -19,10 +19,21 @@ window.addEventListener("wheel", (event) => {
   if (eventHandle < 0) {
     eventHandle = 0;
   }
-  if (eventHandle > 5) {
-    eventHandle = 5;
+  if (eventHandle > 3) {
+    eventHandle = 3;
   }
 });
 
 
 
+const list = document.querySelectorAll('.list div span')
+console.log(list)
+
+function pagechage (a,place){
+  a.addEventListener('click',function(){
+    location.href = place
+  })
+}
+pagechage(list[0],'#la')
+pagechage(list[1],'#barboa')
+pagechage(list[2],'#newyork')

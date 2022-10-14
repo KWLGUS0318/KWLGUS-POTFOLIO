@@ -18,23 +18,22 @@
 }
 #root > nav {
   position: fixed;
-  right: 0;
-  width: 10vw;
+  width: 200px;
   height: 100vh;
   background-color: var(--white);
+  left: -20px;
 }
 #root > nav:hover {
-  width: 15vw;
+  width: 200px;
   height: inherit;
   transition-duration: 2s;
 }
 #root > nav:hover > ol {
   width: inherit;
   height: 100px;
-  display: block;
   position: var(--relative);
-  top: 30px;
-  left: 20px;
+  top: 10px;
+  left: -10px;
   margin-bottom: 15px;
 }
 #root > nav:hover > ol > li {
@@ -77,16 +76,16 @@
   background-color: var(--black);
   position: relative;
   top: 50px;
-  right: -50px;
+  right: -20px;
   margin-bottom: 10px;
 }
 #root > nav > ul {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  top: 35px;
+  width: 200px;
+  height: 100%;
 }
 #root > nav > ul > a {
+  width: 55%;
+  height: 16.6666666667%;
   text-decoration: none;
   color: var(--darkgray);
 }
@@ -95,12 +94,15 @@
 }
 #root > nav > ul > a > li {
   border-radius: 10px;
+  position: relative;
+  right: -20px;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
-  width: inherit;
-  height: 100px;
+  width: 55%;
+  height: 16.6666666667%;
   border: 1px dotted var(--darkgray);
 }
 #root > nav > ul > a > li:active {
@@ -116,4 +118,8 @@
 }
 #root > nav > ul > a > li > i > p {
   padding-left: 5px;
+}
+
+.menubar {
+  display: none;
 }/*# sourceMappingURL=carezone.css.map */

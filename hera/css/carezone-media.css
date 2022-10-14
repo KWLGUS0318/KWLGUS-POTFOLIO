@@ -3,30 +3,16 @@
     width: 15vw;
     background-color: #fff;
   }
-  #root > nav:hover > ol {
-    left: -30px;
+  #root > nav:hover .menu-select {
+    display: block;
   }
-  #root > nav > ol {
+  .menu-select {
+    height: 10%;
+    display: none;
+  }
+  .menubar {
+    display: block;
     position: relative;
-    right: 20px;
-  }
-}
-@media (max-width: 500px) {
-  #root > nav {
-    border: none;
-  }
-  #root > nav > ul > a > li {
-    font-size: 0.5rem;
-  }
-  #root > nav > ol {
-    visibility: hidden;
-  }
-  #root > nav > ul {
-    position: absolute;
-    top: 0;
-    height: 750px;
-  }
-  #root > nav > ul > a > li {
-    height: 125px;
+    left: 20px;
   }
 }/*# sourceMappingURL=carezone-media.css.map */

@@ -3,49 +3,25 @@
     &>nav {
       width: 15vw;
       background-color: #fff;
-
-
-      &:hover {
-        &>ol {
-          left: -30px;
+      &:hover{
+        .menu-select{
+          display: block;
         }
       }
 
-      &>ol {
-        position: relative;
-        right: 20px;
-
-      }
     }
+
   }
+  .menu-select {
+    height: 10%;
+    display: none;
+
+  }
+.menubar{
+  display: block;
+  position: relative;
+  left: 20px;
+
+}
 }
 
-
-
-
-
-@media(max-width:500px) {
-  #root {
-    &>nav {
-      border: none;
-      &>ul>a>li{
-        font-size: 0.5rem;
-      }
-
-
-      &>ol {
-        visibility: hidden;
-      }
-
-      &>ul {
-        position: absolute;
-        top: 0;
-        height: 750px;
-
-        &>a>li {
-          height: calc(750px/6);
-        }
-      }
-    }
-  }
-}
