@@ -23,6 +23,8 @@ header {
   height: 63px;
   background-color: #fff;
   position: fixed;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,20 +45,24 @@ header > nav {
 .search {
   width: 100vw;
   height: 100px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   z-index: 1;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-search {
-  width: 40%;
+  width: 50%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .input-search > input {
-  width: 90%;
+  width: 80%;
   height: 90%;
   border: 1px solid #666;
   margin-right: 10px;
@@ -66,6 +72,70 @@ header > nav {
 .input-search > img {
   width: 5%;
   cursor: pointer;
+}
+
+.personal_infor,
+.food-infor {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hambeger_bar {
+  width: 10vw;
+  height: 50%;
+}
+.hambeger_bar > ul {
+  width: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.hambeger_bar > ul > li {
+  width: 80px;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  height: 10px;
+  background-color: var(--color5);
+  border-radius: 20px;
+}
+
+.food-store {
+  width: 600px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-store > div {
+  width: 33.3%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-store > div > a > img {
+  width: 130px;
+  height: inherit;
+}
+
+.personal_infor > div {
+  width: 25%;
+  height: 30%;
+  font-size: 1rem;
+  border-right: 1px solid #666;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+.personal_infor > div > a {
+  color: #666;
+  width: 100%;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .menu {
