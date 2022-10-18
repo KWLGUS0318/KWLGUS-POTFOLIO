@@ -144,6 +144,33 @@
   transform: rotateX(90deg) rotateY(90deg) translateX(-20px) translateZ(-200px) skew(-45deg);
 }
 
+.arrow {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+}
+.arrow > span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  -webkit-animation: animate 2s infinite;
+          animation: animate 2s infinite;
+}
+.arrow > span:span:nth-child(2) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.arrow > span:span:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
 @-webkit-keyframes open {
   50% {
     transform: rotate(40deg);
@@ -153,6 +180,30 @@
 @keyframes open {
   50% {
     transform: rotate(40deg);
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media (max-width: 500px) {

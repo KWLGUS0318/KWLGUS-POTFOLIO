@@ -25,7 +25,6 @@
 .img-section {
   width: 50%;
   height: inherit;
-  border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,4 +57,7 @@
   border-radius: 60px;
   background-color: #fff;
   cursor: pointer;
+}
+.list > div > span:hover {
+  border: 2px solid black;
 }/*# sourceMappingURL=index.css.map */

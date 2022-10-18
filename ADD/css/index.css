@@ -33,9 +33,11 @@ header {
 header > div {
   width: 40%;
   height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+header > div > a > img {
+  position: relative;
+  left: 40px;
+  top: 10px;
 }
 header > nav {
   width: 60%;
@@ -48,7 +50,6 @@ header > nav {
   position: fixed;
   top: 60px;
   z-index: 1;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +95,9 @@ header > nav {
   align-items: center;
   justify-content: space-around;
   list-style: none;
+  position: relative;
+  top: 30px;
+  left: 0px;
 }
 .hambeger_bar > ul > li {
   width: 80px;
@@ -124,10 +128,12 @@ header > nav {
 }
 
 .personal_infor > div {
+  position: relative;
+  top: 35px;
   width: 25%;
   height: 30%;
   font-size: 1rem;
-  border-right: 1px solid #666;
+  border-right: 1px dotted #999;
   font-family: "Nanum Gothic", sans-serif;
   text-align: center;
 }
@@ -150,6 +156,11 @@ header > nav {
   align-items: center;
   justify-content: center;
 }
+.menu > li:hover {
+  position: relative;
+  margin-top: 10px;
+  border-bottom: 3px solid black;
+}
 .menu > li > a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -162,7 +173,7 @@ header > nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 30px;
+  top: 60px;
 }
 
 .first-recommand {
@@ -183,8 +194,8 @@ header > nav {
   width: 10vw;
   height: 5vh;
   border-radius: 10px;
-  border: 1px solid var(--color4);
   background-color: #fff;
+  border: none;
   cursor: pointer;
 }
 .enter:active {
@@ -336,4 +347,39 @@ header > nav {
   position: relative;
   top: 75px;
   background-color: #fff;
+}
+.food-section > div:nth-child(1) {
+  width: 100%;
+  height: 90%;
+  border: 1px solid black;
+  display: flex;
+}
+.food-section > div:nth-child(1) > div {
+  width: 25%;
+  height: 100%;
+  border: 1px solid black;
+}
+.food-section > div:nth-child(2) {
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-section > div:nth-child(2) > button {
+  width: 2.5vw;
+  height: 5vh;
+  background-color: var(--color1);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+}
+.food-section > div:nth-child(2) > button:hover {
+  background-color: var(--color2);
+}
+.food-section .number {
+  width: 70px;
+  text-align: center;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=index.css.map */

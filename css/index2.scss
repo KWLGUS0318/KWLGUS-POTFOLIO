@@ -53,6 +53,7 @@
   overflow: hidden;
   @include array();
 
+
 }
 
 .design,
@@ -149,6 +150,7 @@ section {
   left: 0%;
   height: 10vh;
   line-height: 2.5;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .profile {
@@ -158,6 +160,7 @@ section {
   left: 30%;
   text-align: center;
   line-height: 2.5;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .enter {

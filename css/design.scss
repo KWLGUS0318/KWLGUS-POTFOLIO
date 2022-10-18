@@ -102,12 +102,12 @@
   left: -40px;
   cursor: pointer;
   font-size: 2rem;
-  background: linear-gradient(-45deg, #686FFD, #f1a73f, #686FFD, #f1a73f);
   background-position: 0 10%;
   color: #fff;
   border: 1px solid #fff;
+  background-color: #000;
 
- 
+
 
 }
 
@@ -119,16 +119,14 @@
   position: fixed;
   cursor: pointer;
   text-align: center;
-  line-height: 5.5;
+  line-height: 6;
   color: var(--white);
-  border-color: var(--blue);
   color: var(--black);
-
-  border: 1px solid rgb(142, 107, 238);
+  border: 1px solid rgb(130, 91, 238);
   ;
 
   &:hover {
-    background-color: rgb(142, 107, 238);
+    background-color: rgb(130, 91, 238);
     color: var(--white);
 
   }
@@ -189,3 +187,23 @@ main {
   top: 0;
 }
 
+#web , #logo, #illust{
+  &>h2{
+    width: inherit;
+    height: 10%;
+    border: 1px solid var(--black);
+    text-align: center;
+    line-height: 3.5;
+  }
+  &>div{
+    width: inherit;
+    height:90%;
+    border: 1px solid var(--black);
+    &>div{
+    width: calc(80vw/3);
+    height: 100%;
+    border: 1px solid var(--black);
+
+    }
+  }
+}
