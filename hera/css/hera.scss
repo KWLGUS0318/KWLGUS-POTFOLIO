@@ -22,7 +22,6 @@
 }
 
 body {
-  border: 1px dotted black;
   position: absolute;
   left: 25%;
 }
@@ -208,8 +207,8 @@ body {
 section {
   width: var(--100);
   height: 40vh;
-  border: 1px solid #000;
-
+  border: 1px solid red;
+  margin-top: 20px;
   &>h2 {
     width: inherit;
     text-align: center;
@@ -262,7 +261,6 @@ section {
   width: var(--100);
   height: 90%;
   @include array();
-  border: 2px solid red;
 
 
   &>img {
@@ -279,7 +277,6 @@ section {
   @include array();
 
   &>div {
-    border: 1px solid black;
     width: calc(100vw/2);
     height: inherit;
 
@@ -318,7 +315,6 @@ section {
     width: calc(150px/2);
     height: var(--100);
     @include array();
-    border: 2px solid black;
     border-bottom: none;
     &>img{
       width: 20px;
@@ -328,12 +324,10 @@ section {
 
 .plus-extra{
   @include plus();
-  border: 1px solid black;
   left: 70px;
   top: 22px;
 
   &>div{
-    border-right: 2px solid black;
     border-bottom: none;
     width: calc(100px/2);
     height: var(--100);
@@ -352,7 +346,6 @@ section {
 }
 .best-extra>div {
   height: 50%;
-  border: 1px solid black;
   @include array();
 &>div{
   width: 50%;
@@ -394,7 +387,6 @@ section {
 .new{
   width: var(--100);
   height:var(--100);
-  border: 1px solid green;
   @include array();
   &>div{
     width: calc(var(--100)/4);
