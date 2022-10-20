@@ -165,15 +165,13 @@ header > ul > li:nth-child(1) > img {
 }
 
 .nextbtn {
+  background-color: #fff;
+  width: 100px;
   position: absolute;
   right: 50px;
   top: 200px;
-  width: 100px;
-  height: 100px;
   border-radius: 50px;
-  background-color: #fff;
   border: none;
-  font-size: 60px;
 }
 .nextbtn:active {
   box-shadow: inset 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
