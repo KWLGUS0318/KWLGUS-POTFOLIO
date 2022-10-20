@@ -429,4 +429,8 @@ section > h2 {
   border-bottom: 360px solid #666666;
   border-left: 180px solid transparent;
   border-right: 180px solid transparent;
+}
+
+.on {
+  display: none;
 }/*# sourceMappingURL=hera.css.map */

@@ -283,6 +283,10 @@ header > ul > li:nth-child(1) > img {
   border-radius: 30px;
   position: inherit;
   z-index: 2;
+  color: #a0a0a0;
+}
+.routine-section > div > div > button > i {
+  margin-right: 5px;
 }
 .routine-section > div > div > button:hover {
   background-color: #F4D0D2;
