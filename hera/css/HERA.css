@@ -187,9 +187,9 @@ body {
 
 section {
   width: var(--100);
-  height: 40vh;
-  border: 1px solid red;
+  height: 50vh;
   margin-top: 20px;
+  border: 1px dotted #888;
 }
 section > h2 {
   width: inherit;
@@ -415,12 +415,15 @@ section > h2 {
 }
 .sample > div > button {
   width: 100px;
-  height: var(--100);
-  border-radius: 50px;
+  height: 50px;
   margin-left: 10px;
   border: 1px solid #000;
   background-color: #fff;
   cursor: pointer;
+}
+.sample > div > button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .triangle {
@@ -433,4 +436,112 @@ section > h2 {
 
 .on {
   display: none;
+}
+
+.harmony-entire {
+  width: var(--100);
+  height: var(--100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.harmony-entire > div {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+#slide {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+#slide > ul {
+  width: var(--100);
+  height: var(--100);
+  list-style-type: none;
+  position: absolute;
+}
+#slide > ul > li {
+  width: var(--100);
+  height: var(--100);
+}
+#slide > ul > li > a {
+  width: var(--100);
+  height: var(--100);
+}
+#slide > ul > li > a > img {
+  width: var(--100);
+  height: 115%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#slide2 {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+#slide2 > ul {
+  width: var(--100);
+  height: var(--100);
+  list-style-type: none;
+  position: absolute;
+}
+#slide2 > ul > li {
+  width: var(--100);
+  height: var(--100);
+}
+#slide2 > ul > li > a {
+  width: var(--100);
+  height: var(--100);
+}
+#slide2 > ul > li > a > img {
+  width: var(--100);
+  height: var(--100);
+}
+
+.cosmetic {
+  width: 50vw;
+  height: var(--100);
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cosmetic > div {
+  width: var(--100);
+  height: var(--100);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cosmetic > div > h4,
+.cosmetic > div p {
+  margin-bottom: 30px;
+}
+.cosmetic > div > button {
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+.cosmetic > div > button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.cosmetic > div > img {
+  width: var(--100);
+  height: var(--100);
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=hera.css.map */

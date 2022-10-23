@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
     } else {
       return textIndex = 0;
     }
-  }, time);
+  }, 2000);
 
 
   titleTextBox.animate([

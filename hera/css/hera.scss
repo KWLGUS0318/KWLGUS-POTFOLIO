@@ -28,7 +28,21 @@ body {
 
 :root {
   --yellow: #FFE500;
-  --100 : 100%;
+  --100: 100%;
+}
+
+@mixin button {
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 }
 
 #root {
@@ -206,9 +220,10 @@ body {
 
 section {
   width: var(--100);
-  height: 40vh;
-  border: 1px solid red;
+  height: 50vh;
   margin-top: 20px;
+  border: 1px dotted #888;
+
   &>h2 {
     width: inherit;
     text-align: center;
@@ -265,15 +280,18 @@ section {
 
   &>img {
     width: calc(var(--100)/3);
-    height: var(--100);;
+    height: var(--100);
+    ;
     cursor: pointer;
   }
 
 }
 
 .best-group {
-  width: var(--100);;
-  height: var(--100);;
+  width: var(--100);
+  ;
+  height: var(--100);
+  ;
   @include array();
 
   &>div {
@@ -284,22 +302,24 @@ section {
       font-size: 30px;
       font-weight: 400;
       position: relative;
-      left: 70px; bottom: 13px;
+      left: 70px;
+      bottom: 13px;
     }
-  &>span{
-    position: relative;
-    right: 220px;
+
+    &>span {
+      position: relative;
+      right: 220px;
+    }
   }
-  }
- 
+
 }
 
-.black_cushion{
+.black_cushion {
   position: relative;
   left: 200px;
 }
 
-@mixin  plus {
+@mixin plus {
   width: 100px;
   height: 40px;
   position: relative;
@@ -308,26 +328,28 @@ section {
 
 }
 
-.plus{
- @include plus();
+.plus {
+  @include plus();
   left: 378px;
-  &>div{
+
+  &>div {
     width: calc(150px/2);
     height: var(--100);
     @include array();
     border-bottom: none;
-    &>img{
+
+    &>img {
       width: 20px;
     }
   }
 }
 
-.plus-extra{
+.plus-extra {
   @include plus();
   left: 70px;
   top: 22px;
 
-  &>div{
+  &>div {
     border-bottom: none;
     width: calc(100px/2);
     height: var(--100);
@@ -335,48 +357,57 @@ section {
   }
 }
 
-.best2{
+.best2 {
   position: relative;
-  left: 70px; bottom: 50px;
+  left: 70px;
+  bottom: 50px;
 }
 
-.best3{
+.best3 {
   position: relative;
-  left: 70px; bottom: 50px;
+  left: 70px;
+  bottom: 50px;
 }
+
 .best-extra>div {
   height: 50%;
   @include array();
-&>div{
-  width: 50%;
-  height: var(--100);
-  &:nth-child(2){
-    @include array();
-    text-align: center;
-  }
-  &>img{
-    position: relative;
-    top: 10px;
-  }
-  &>p{
-    font-size: 30px;
-    position: relative;
-    bottom: 35px; left: 20px;
+
+  &>div {
+    width: 50%;
+    height: var(--100);
+
+    &:nth-child(2) {
+      @include array();
+      text-align: center;
+    }
+
+    &>img {
+      position: relative;
+      top: 10px;
+    }
+
+    &>p {
+      font-size: 30px;
+      position: relative;
+      bottom: 35px;
+      left: 20px;
+    }
   }
 }
-}
-.group2{
+
+.group2 {
   width: var(--100);
   height: var(--100);
   flex-direction: column;
-  
-  &>div{
+
+  &>div {
     width: var(--100);
     height: 50%;
     @include array();
-   
+
   }
- 
+
 }
 
 .best-number {
@@ -384,25 +415,30 @@ section {
   top: 30px;
   left: 50px;
 }
-.new{
+
+.new {
   width: var(--100);
-  height:var(--100);
+  height: var(--100);
   @include array();
-  &>div{
+
+  &>div {
     width: calc(var(--100)/4);
     height: inherit;
-    &>div{
+
+    &>div {
       flex-direction: column;
       width: var(--100);
       height: 50%;
       text-align: center;
-      &>img{
+
+      &>img {
         width: 300px;
         height: 130px;
         margin-top: 20px;
         object-fit: contain;
       }
-      &>div{
+
+      &>div {
         width: var(--100);
         height: 50%;
         @include array();
@@ -411,21 +447,17 @@ section {
   }
 }
 
-.sample>div{
+.sample>div {
   width: var(--100);
   height: 50%;
   margin-top: 30px;
   @include array();
-  &>button{
-    width: 100px;
-    height: var(--100);
-    border-radius: 50px;
-    margin-left: 10px;
-    border: 1px solid #000;
-    background-color: #fff;
-    cursor: pointer;
+
+  &>button {
+    @include button();
   }
 }
+
 .triangle {
   width: 0px;
   height: 0px;
@@ -434,6 +466,115 @@ section {
   border-right: 180px solid transparent;
 }
 
-.on{
+.on {
   display: none;
+}
+
+.harmony-entire {
+  width: var(--100);
+  height: var(--100);
+  @include array();
+
+  &>div {
+    width: 50%;
+    height: inherit;
+    @include array();
+    background-color: #000;
+  }
+}
+
+
+#slide {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+
+  &>ul {
+    width: var(--100);
+    height: var(--100);
+    list-style-type: none;
+    position: absolute;
+
+    &>li {
+      width: var(--100);
+      height: var(--100);
+
+      &>a {
+        width: var(--100);
+        height: var(--100);
+
+        &>img {
+          width: var(--100);
+          height: 115%;
+          object-fit: cover;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+#slide2 {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+
+  &>ul {
+    width: var(--100);
+    height: var(--100);
+    list-style-type: none;
+    position: absolute;
+
+    &>li {
+      width: var(--100);
+      height: var(--100);
+
+      &>a {
+        width: var(--100);
+        height: var(--100);
+
+        &>img {
+          width: var(--100);
+          height: var(--100);
+        }
+      }
+
+    }
+  }
+}
+
+
+.cosmetic {
+  width: 50vw;
+  height: var(--100);
+  background-color: #FFF;
+  @include array();
+
+  &>div {
+    width: var(--100);
+    height: var(--100);
+    flex-direction: column;
+    @include array();
+    text-align: center;
+
+    &>h4,
+    p {
+      margin-bottom: 30px;
+    }
+
+    &>button {
+      @include button();
+    }
+
+    &>img {
+      width: var(--100);
+      height: var(--100);
+      object-fit: contain;
+    }
+  }
 }
