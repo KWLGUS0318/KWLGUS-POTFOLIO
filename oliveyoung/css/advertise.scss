@@ -68,10 +68,7 @@ body {
     width: 500%;
     height: 55rem;
     transition: all .25s ease-in;
-    // overflow-x: auto;
-    // scroll-snap-type: x mandatory;
-    // -webkit-overflow-scrolling: touch;
-    // scroll-behavior: smooth;
+
     transform: translateX(0);
 
     @media only screen and (max-width: 1000px) {
@@ -176,7 +173,6 @@ body {
     .box2 {@include color_render($b2cd, $b2cl)}
     .box3 {@include color_render($b3cd, $b3cl)}
     .box4 {@include color_render($b4cd, $b4cl)}
-    .box5 {}
 
     .illustration {
         grid-column: 2 / -1;
