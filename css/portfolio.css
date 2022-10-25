@@ -23,12 +23,13 @@
   top: 120px;
   left: 35vw;
   z-index: 2;
-  cursor: default;
+  cursor: pointer;
 }
 
 .add {
   top: 80px;
   left: 50vw;
+  cursor: pointer;
 }
 
 .book-diary {
